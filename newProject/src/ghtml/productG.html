@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>店铺首页</title>
+    <link rel="stylesheet" href="../gcss/style.css">
+    <link rel="stylesheet" href="../gcss/base.css">
+  </head>
+  <body>
+        <div id="storeHome">
+            <!-- <div class="alert" id="productG_alert_select">
+                <div class="productG_alert_select">
+                      <div class="productG_alert_select_top clearfix">
+                        <div class="fl productG_alert_select_title fl">
+                            商品分类信息
+                        </div>
+                        <div class="productG_alert_search fr">
+                            <input type="text" id="productG_alert_search" placeholder="输入分类查找">
+                            <div class="search_logo">
+
+                            </div>
+                        </div>
+                      </div>
+                      <div class="productG_alert_select_bot clearfix">
+                            <div class="productG_alert_selectI fl">
+                              请选择
+                            </div>
+                            <div class="productG_alert_selectT fl">
+                              <div class="productG_content_selectS fl">
+                                <div class="productG_content_proA fl">
+                                  上衣
+                                </div>
+                                <div class="circle fr">
+
+                                </div>
+                              </div>
+                              <div class="productG_content_selectS fl" style="margin-left:28px;">
+                                <div class="productG_content_proA fl">
+                                  红色
+                                </div>
+                                <div class="circle fr">
+
+                                </div>
+                              </div>
+                              <div class="productG_content_addressB fl">
+                                <div class="productG_content_proA fl" style="width:90%;">
+                                  商品
+                                </div>
+                                <div class="circle fr">
+
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                </div>
+            </div> -->
+            <!-- <div class="alert" id="productG_alert_edit">
+                <div class="productG_alert_select">
+                  <div class="productG_alert_select_top clearfix">
+                        <div class="productG_alert_two fl">
+                          原单价
+                        </div>
+                        <div class="productG_alert_two fr">
+                          现单价
+                        </div>
+                  </div>
+                  <div class="productG_alert_select_bot clearfix">
+                        <div class="productG_oldPrice fl">
+                              70
+                        </div>
+                        <div class="productG_newPrice_box fl">
+                            <div class="fl" style="margin-left:70px">
+                              修改为
+                            </div>
+                            <div class="productG_newPrice fl">
+                                <input type="text" name="name" id="productG_newPrice">
+                            </div>
+                            <div class="fl" style="margin-left:20px">
+                              元/条
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+            </div> -->
+            <div class="alert" id="productG_alert_edit">
+                <div class="productG_alert_select">
+                  <div class="productG_alert_select_top clearfix">
+                        <div class="productG_alert_two fl">
+                          购买数量
+                        </div>
+                        <div class="productG_alert_two fr">
+                          产品单价
+                        </div>
+                  </div>
+                  <div class="productG_alert_select_bot clearfix">
+                        <div class="productG_oldPrice fl">
+                              70
+                        </div>
+                        <div class="productG_newPrice_box fl">
+                            <div class="fl" style="margin-left:70px">
+                              修改为
+                            </div>
+                            <div class="productG_newPrice fl">
+                                <input type="text" name="name" id="productG_newPrice">
+                            </div>
+                            <div class="fl" style="margin-left:20px">
+                              元/条
+                            </div>
+                        </div>
+                  </div>
+                </div>
+
+            </div>
+              <div class="homePage_header">
+                    <div class="homePage_logo">
+
+                    </div>
+                    <div class="contentWrap">
+                          <ul class="clearfix homePage_header_list">
+                              <li >站点页面</li>
+                              <li class="header_tab_active">线上分店</li>
+                              <li>产品库</li>
+                              <li>生成app</li>
+                          </ul>
+                    </div>
+                    <div class="createD">
+                          创建店铺
+                    </div>
+                    <div class="createL">
+                          创建店铺列表
+                    </div>
+              </div>
+              <div class="productG_content_wrapall clearfix">
+                <section class="storeHome_aside fl">
+                  <div class="storeHome_aside_wrap">
+                    <div class="storeHome_aside_title">
+                        <div class="storeHome_aside_img fl">
+                            <img src="../images/shopICON.png"  />
+                        </div>
+                        <div class="storeHome_aside_text fl">
+                            苏州分店
+                        </div>
+                    </div>
+                    <div class="storeHome_aside_list">
+                          <ul class="clearfix">
+                            <li class="storeHome_aside_listActive">
+                                <div class="storeHome_aside_list_logo1 storeHome_aside_list_logo1_active fl">
+
+                                </div>
+                                <div class="storeHome_aside_list_Text fl">
+                                    首页
+                                </div>
+                            </li>
+                            <li>
+                              <div class="storeHome_aside_list_logo2 fl">
+
+                              </div>
+                              <div class="storeHome_aside_list_Text fl">
+                                  商品管理
+                              </div>
+                            </li>
+                            <li>
+                              <div class="storeHome_aside_list_logo3 fl">
+
+                              </div>
+                              <div class="storeHome_aside_list_Text fl">
+                                  订单管理
+                              </div>
+                            </li>
+                            <li>
+                              <div class="storeHome_aside_list_logo4 fl">
+
+                              </div>
+                              <div class="storeHome_aside_list_Text fl">
+                                  店铺装修
+                              </div>
+                            </li>
+                            <li>
+                              <div class="storeHome_aside_list_logo5 fl">
+
+                              </div>
+                              <div class="storeHome_aside_list_Text fl">
+                                  店铺设置
+                              </div>
+                            </li>
+                          </ul>
+                    </div>
+
+                  </div>
+                </section>
+                <div class="productG_content fl">
+                    <div class="productG_content_top clearfix">
+                          <p class="productG_content_topT fl">
+                              新建商品
+                          </p>
+                          <div class="productG_content_topI fl">
+                              <div class="fl">
+                                (注
+                              </div>
+                              <div class="createStore_import fl" style="height:10px;margin:14px 0 0 10px ; "></div>
+                              <div class="fl">
+                                  为必填项)
+                              </div>
+                          </div>
+                    </div>
+                    <div class="productG_content_bot">
+                        <div class="productG_content_input_list">
+                            <ul class="clearfix">
+                              <li>
+                                  <div class="productG_content_leftInput fl">
+                                      产品名称
+                                  </div>
+                                  <div class="productG_content_rightText fl">
+                                      <input type="text" name="name" id="productNameIn">
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="productG_content_leftInput fl">
+                                      产品编号
+                                  </div>
+                                  <div class="productG_content_rightText fl">
+                                      <input type="text" name="name" id="productNumIn">
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="productG_content_leftInput fl">
+                                      产品分类
+                                  </div>
+                                  <div class="productG_content_rightText fl">
+                                      <input type="text" name="name" id="productTypeIn">
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="productG_content_leftInput fl">
+                                      商品重量
+                                  </div>
+                                  <div class="productG_content_rightText fl">
+                                      <input type="text" name="name" id="productKgIn">
+                                  </div>
+                              </li>
+                            </ul>
+                        </div>
+                        <div class="productG_content_config clearfix">
+                              <div class="createStore_import fl" style="height:10px;">
+
+                              </div>
+                              <div class="config_text fl">
+                                  报价配置
+                              </div>
+                        </div>
+                        <div class="productG_content_table">
+                              <ul class="clearfix productG_content_ul1">
+                                  <li class="productG_content_table1 fl">选择售卖的单品</li>
+                                  <li class="productG_content_table2 fl">颜色</li>
+                                  <li class="productG_content_table3 fl">尺码</li>
+                                  <li class="productG_content_table4 fl">
+                                      <div class="fl" style="margin-left:8px;">
+                                        单品编号
+                                      </div>
+                                      <div class="productG_table1_select productG_table1_selectActive fl">
+
+                                      </div>
+                                  </li >
+                                  <li class="productG_content_table5 fl">
+                                      <div class="createStore_import fl">
+
+                                      </div>
+                                      <div class="fl">
+                                        库存量
+                                      </div>
+                                      <div class="productG_table1_select fl">
+
+                                      </div>
+                                  </li>
+                                  <li class="productG_content_table6 fl">
+                                    <div class="fl" style="margin-left:35px;">
+                                      批量
+                                    </div>
+                                    <div class="productG_table1_select fl">
+
+                                    </div>
+
+                                  </li>
+                                  <li class="productG_content_table7 fl">
+                                    <div class="createStore_import fl">
+
+                                    </div>
+                                    <div class="fl">
+                                      报价
+                                    </div>
+                                    <div class="productG_table1_select fl">
+
+                                    </div>
+                                  </li>
+                                  <li class="productG_content_table8 fl">
+                                    单价
+                                  </li>
+                                  <li class="productG_content_table9 fl">
+                                      报价操作
+                                  </li>
+                              </ul>
+                              <ul class="clearfix productG_content_ul2">
+                                  <li class="productG_content_table1 fl">
+                                      <div class="productG_table_select">
+
+                                      </div>
+                                  </li>
+                                  <li class="productG_content_table2 fl">红色</li>
+                                  <li class="productG_content_table3 fl">160/88</li>
+                                  <li class="productG_content_table4 fl">
+                                      PS-0001
+                                  </li >
+                                  <li class="productG_content_table5 fl">
+                                      4000000
+                                  </li>
+                                  <li class="productG_content_table6 fl">
+                                      1-99/100-999
+
+                                  </li>
+                                  <li class="productG_content_table7 fl">
+                                    70/60
+                                  </li>
+                                  <li class="productG_content_table8 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        70
+                                    </div>
+                                  </li>
+                                  <li class="productG_content_table9 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        修改批量报价
+                                    </div>
+                                  </li>
+                              </ul>
+                              <ul class="clearfix productG_content_ul2">
+                                  <li class="productG_content_table1 fl">
+                                      <div class="productG_table_select">
+
+                                      </div>
+                                  </li>
+                                  <li class="productG_content_table2 fl">红色</li>
+                                  <li class="productG_content_table3 fl">160/88</li>
+                                  <li class="productG_content_table4 fl">
+                                      PS-0001
+                                  </li >
+                                  <li class="productG_content_table5 fl">
+                                      4000000
+                                  </li>
+                                  <li class="productG_content_table6 fl">
+                                      1-99/100-999
+
+                                  </li>
+                                  <li class="productG_content_table7 fl">
+                                    70/60
+                                  </li>
+                                  <li class="productG_content_table8 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        70
+                                    </div>
+                                  </li>
+                                  <li class="productG_content_table9 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        修改批量报价
+                                    </div>
+                                  </li>
+                              </ul>
+                              <ul class="clearfix productG_content_ul2">
+                                  <li class="productG_content_table1 fl">
+                                      <div class="productG_table_select productG_table_selectActive">
+
+                                      </div>
+                                  </li>
+                                  <li class="productG_content_table2 fl">红色</li>
+                                  <li class="productG_content_table3 fl">160/88</li>
+                                  <li class="productG_content_table4 fl">
+                                      PS-0001
+                                  </li >
+                                  <li class="productG_content_table5 fl">
+                                      4000000
+                                  </li>
+                                  <li class="productG_content_table6 fl">
+                                      1-99/100-999
+
+                                  </li>
+                                  <li class="productG_content_table7 fl">
+                                    70/60
+                                  </li>
+                                  <li class="productG_content_table8 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        70
+                                    </div>
+                                  </li>
+                                  <li class="productG_content_table9 fl">
+                                    <div class="">
+
+                                    </div>
+                                    <div class="">
+                                        修改批量报价
+                                    </div>
+                                  </li>
+                              </ul>
+                        </div>
+                        <div class="productG_content_table_info">
+                          (提示：总库存为0时，商品归为下架商品，用户将无法选择此规格商品。)
+                        </div>
+                        <div class="clearfix">
+                          <div class="productG_content_config fl">
+                                <div class="createStore_import fl" style="height:10px;">
+
+                                </div>
+                                <div class="config_text fl">
+                                    可售范围
+                                </div>
+                          </div>
+                          <div class="productG_content_radio_box fl">
+                              <div class="productG_content_radio_left fl">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                      全国可售卖
+                                  </div>
+                              </div>
+                              <div class="productG_content_radio_right fl">
+                                <div class="productG_selectDot fl">
+
+                                </div>
+                                <div class="fl">
+                                    限制省市区
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <div class="productG_content_threeS">
+                          <div class="productG_add_address clearfix">
+                            <div class="fl" style="font-size:26px; margin-left:10px;">+</div>
+                            <div class="fl">
+                              增加新的售卖范围
+                            </div>
+                          </div>
+                          <div class="productG_content_threeWrap clearfix">
+                            <div class="productG_content_address fl">
+                              <div class="productG_content_pro fl">
+                                省份
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                            <div class="productG_content_address  fl">
+                              <div class="productG_content_city fl">
+                                市
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                            <div class="productG_content_address fl">
+                              <div class="productG_content_area fl">
+                                县／区
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="productG_content_threeWrap clearfix">
+                            <div class="productG_content_address fl">
+                              <div class="productG_content_pro fl">
+                                省份
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                            <div class="productG_content_address  fl">
+                              <div class="productG_content_city fl">
+                                市
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                            <div class="productG_content_address fl">
+                              <div class="productG_content_area fl">
+                                县／区
+                              </div>
+                              <div class="circle fr">
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="clearfix">
+                          <div class="productG_content_config fl">
+                                <div class="createStore_import fl" style="height:10px;">
+
+                                </div>
+                                <div class="config_text fl">
+                                    运费配置
+                                </div>
+                          </div>
+                          <div class="productG_content_nun fl">
+                              <div class="productG_content_yunB fl">
+                                <div class="productG_content_yun fl">
+                                  实用运费模版
+                                </div>
+                                <div class="circle fr">
+
+                                </div>
+                              </div>
+                              <div class="productG_content_moB fl">
+                                <div class="productG_content_mo fl">
+                                  选择模版
+                                </div>
+                                <div class="circle fr">
+
+                                </div>
+                              </div>
+                              <div class="productG_content_blue fl">
+                                查看此运费模板
+                              </div>
+                              <div class="productG_content_blue fl">
+                                管理运费模板
+                              </div>
+                          </div>
+                        </div>
+                        <div class="clearfix">
+                            <div class="productG_content_config fl">
+                                  <div class="createStore_import fl" style="height:10px;">
+
+                                  </div>
+                                  <div class="config_text fl">
+                                      产品图片
+                                  </div>
+                            </div>
+                            <div class="productG_content_nun fl">
+
+                            </div>
+                          </div>
+                          <div class="clearfix">
+                              <div class="productG_content_config fl">
+                                    <div class="createStore_import fl" style="height:10px;">
+
+                                    </div>
+                                    <div class="config_text fl">
+                                        积分兑换
+                                    </div>
+                              </div>
+                              <div class="productG_content_radio_box fl">
+                                  <div class="productG_content_radio_left fl">
+                                      <div class="productG_selectDot fl">
+
+                                      </div>
+                                      <div class="fl">
+                                          开启
+                                      </div>
+                                  </div>
+                                  <div class="productG_content_radio_right fl">
+                                    <div class="productG_selectDot fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        关闭
+                                    </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="productG_content_config fl">
+                                      <div class="createStore_import fl" style="height:10px;">
+
+                                      </div>
+                                      <div class="config_text fl">
+                                          商品说明
+                                      </div>
+                                </div>
+                                <div class="productG_content_textarea fl">
+                                    <textarea id="productG_content_textare"></textarea>
+                                </div>
+                              </div>
+                              <div class="productG_content_saveBtn">
+                                保存
+                              </div>
+                    </div>
+                </div>
+              </div>
+
+        </div>
+  </body>
+    <script type="text/javascript" src="../gjs/jquery.min.js">  </script>
+    <script type="text/javascript" src="../gjs/base.js">  </script>
+    <script type="text/javascript" src="../gjs/app.js">  </script>
+
+    <script type="text/javascript">
+          $(function(){
+          })
+
+    </script>
+</html>
