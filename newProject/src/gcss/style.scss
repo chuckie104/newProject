@@ -1,5 +1,6 @@
 $mainBlue:#00abeb;
 $greyBorder:#dedede;
+$mainRed:#c83333;
 
 @mixin allBtn($width,$height,$color,$fontColor){
     width: $width;
@@ -1067,4 +1068,75 @@ background: url("../images/iconCurrent.png") no-repeat !important;
     height: 100%;
     border: none;
   }
+}
+
+.productG_alert_firstF{
+  width: 100%;
+
+  ul{
+    width: 100%;
+    font-size: 0px;
+    border-top: 1px solid $greyBorder;
+    border-bottom:  1px solid $greyBorder;
+    li{
+      width: 100%;
+      height: 24px;
+      line-height:24px;
+      padding: 4px 0;
+      float: left;
+      color: #333;
+      font-size: 12px;
+      border-bottom:  1px solid $greyBorder;
+    }
+    li:last-child{
+      border-bottom: none;
+    }
+  }
+}
+
+.productG_alert_blueD{
+  color: #438eb9;
+}
+
+.productG_alert_secondF{
+  width: 260px;
+  margin:  0 auto;
+}
+
+.productG_alert_titleP{
+  text-align: center;
+  font: 12px;
+  height: 30px;
+  line-height: 30px;
+
+
+}
+
+.productG_alert_show{
+  width: 100%;
+
+  li{
+    float: left;
+    background-color: #fff;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid $greyBorder;
+    .productG_alert_show_left{
+      width: 90px;
+      text-align: right;
+    }
+  }
+}
+
+.productG_alert_show_num {
+    margin-left: 24px;
+}
+.font-red{
+    color: $mainRed;
+}
+
+.productG_alert_show_btn{
+  @include allBtn(60px,25px,$mainBlue,#fff);
+  margin: 10px auto;
 }

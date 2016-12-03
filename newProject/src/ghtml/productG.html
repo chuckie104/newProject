@@ -8,7 +8,7 @@
   </head>
   <body>
         <div id="storeHome">
-            <!-- <div class="alert" id="productG_alert_select">
+            <div class="alert" id="productG_alert_select" style="display:none;">
                 <div class="productG_alert_select">
                       <div class="productG_alert_select_top clearfix">
                         <div class="fl productG_alert_select_title fl">
@@ -53,8 +53,8 @@
                             </div>
                       </div>
                 </div>
-            </div> -->
-            <!-- <div class="alert" id="productG_alert_edit">
+            </div>
+            <div class="alert" id="productG_alert_edit" style="display:none;">
                 <div class="productG_alert_select">
                   <div class="productG_alert_select_top clearfix">
                         <div class="productG_alert_two fl">
@@ -81,9 +81,8 @@
                         </div>
                   </div>
                 </div>
-
-            </div> -->
-            <div class="alert" id="productG_alert_edit">
+            </div>
+            <div class="alert" id="productG_alert_buy" style="display:none;">
                 <div class="productG_alert_select">
                   <div class="productG_alert_select_top clearfix">
                         <div class="productG_alert_two fl">
@@ -93,26 +92,113 @@
                           产品单价
                         </div>
                   </div>
-                  <div class="productG_alert_select_bot clearfix">
-                        <div class="productG_oldPrice fl">
-                              70
-                        </div>
-                        <div class="productG_newPrice_box fl">
-                            <div class="fl" style="margin-left:70px">
-                              修改为
-                            </div>
-                            <div class="productG_newPrice fl">
-                                <input type="text" name="name" id="productG_newPrice">
-                            </div>
-                            <div class="fl" style="margin-left:20px">
-                              元/条
-                            </div>
-                        </div>
+                  <div class="productG_alert_select_bot clearfix" style="padding-top:0px;">
+                      <div class="productG_alert_firstF">
+                          <ul class="clearfix" id="productG_alert_firstUl">
+                            <li>
+                                <div class="fl" style="margin-left:20px;">
+                                      起订量
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:20px;">
+                                    <input type="text" name="name" id="productG_alert_num">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  条及以上
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:96px;">
+                                    <input type="text" name="name" id="productG_alert_price">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  元/条
+                                </div>
+                                <div class="fr productG_alert_blueD" style="margin-right:4px;">
+                                  删除
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fl" style="margin-left:20px;">
+                                      起订量
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:20px;">
+                                    <input type="text" name="name" id="productG_alert_num">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  条及以上
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:96px;">
+                                    <input type="text" name="name" id="productG_alert_price">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  元/条
+                                </div>
+                                <div class="fr productG_alert_blueD" style="margin-right:4px;">
+                                  删除
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fl" style="margin-left:20px;">
+                                      起订量
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:20px;">
+                                    <input type="text" name="name" id="productG_alert_num">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  条及以上
+                                </div>
+                                <div class="productG_newPrice fl" style="margin-left:96px;">
+                                    <input type="text" name="name" id="productG_alert_price">
+                                </div>
+                                <div class="fl" style="margin-left:4px;">
+                                  元/条
+                                </div>
+                                <div class="fr productG_alert_blueD" style="margin-right:4px;">
+                                  删除
+                                </div>
+                            </li>
+                          </ul>
+                      </div>
+                      <div class="productG_alert_secondF">
+                          <div class="productG_alert_titleP">
+                              预览
+                          </div>
+                          <div class="productG_alert_show">
+                              <ul class="clearfix">
+                                <li>
+                                    <div class="fl productG_alert_show_left ">
+                                        2-99条:
+                                    </div>
+                                    <div class="productG_alert_show_num fl">
+                                        <span class="font-red" style="margin-right:10px;">100.00</span><em>元条</em>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fl productG_alert_show_left ">
+                                        100-99条:
+                                    </div>
+                                    <div class="productG_alert_show_num fl">
+                                        <span class="font-red" style="margin-right:10px;">100.00</span><em>元条</em>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fl productG_alert_show_left ">
+                                        2-99条:
+                                    </div>
+                                    <div class="productG_alert_show_num fl">
+                                        <span class="font-red" style="margin-right:10px;">100.00</span><em>元条</em>
+                                    </div>
+                                </li>
+                              </ul>
+                              <div class="productG_alert_show_btn">
+                                  确认
+                              </div>
+                          </div>
+                      </div>
                   </div>
                 </div>
 
             </div>
-              <div class="homePage_header">
+
+            <div class="homePage_header">
                     <div class="homePage_logo">
 
                     </div>
@@ -601,7 +687,6 @@
                     </div>
                 </div>
               </div>
-
         </div>
   </body>
     <script type="text/javascript" src="../gjs/jquery.min.js">  </script>
