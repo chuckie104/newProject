@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>产品列表</title>
+    <link rel="stylesheet" href="../gcss/style.css">
+    <link rel="stylesheet" href="../gcss/base.css">
+    <style media="screen">
+      .productG_content_ul1 li{
+        min-height: 40px;
+      }
+
+      .j_con_main_con_nav{
+        position: absolute;
+        bottom: 13px;left: 50%;
+        transform: translate(-50%, 0);
+        line-height: 18px;
+      }
+      .j_con_main_con_nav ul li{
+        float: left;
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .j_con_main_con_nav ul li.current{
+        color: #00abeb;
+      }
+    </style>
+  </head>
+
+  <body>
+        <div id="productList">
+              <div class="homePage_header">
+                    <div class="homePage_logo">
+
+                    </div>
+                    <div class="contentWrap">
+                          <ul class="clearfix homePage_header_list">
+                              <li >站点页面</li>
+                              <li>线上分店</li>
+                              <li class="header_tab_active">产品库</li>
+                              <li>生成app</li>
+                          </ul>
+                    </div>
+                    <div class="createD">
+                          创建店铺
+                    </div>
+              </div>
+              <div class="productList_content clearfix">
+                    <div class="productList_content_aside fl">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="productList_aside_logo fl">
+
+                                </div>
+                                <div class="productList_aside_info fl">
+                                    产品列表
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productList_aside_logo2 fl">
+
+                                </div>
+                                <div class="productList_aside_info fl">
+                                    产品分类
+                                </div>
+                            </li>
+                            <li>
+                                <div class="productList_aside_logo3 fl">
+
+                                </div>
+                                <div class="productList_aside_info fl">
+                                    产品规格
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="productG_content fl">
+                        <div class="productG_content_top clearfix">
+                              <p class="productG_content_topT fl">
+                                  产品分类管理
+                              </p>
+                              <div class="productG_content_topI fl">
+                                  <div class="fl">
+                                    (注&nbsp;&nbsp;&nbsp;可设为二级导航)
+                                  </div>
+
+                              </div>
+                              <div class="productClassfix_topBtnBox fr" style="margin-right:14px; position:relative;">
+                                  <div class="productClassfix_btnC fl">
+                                      分类列表
+                                  </div>
+                                  <div class="productClassfix_btnN fl">
+                                      新建列表
+                                  </div>
+                                  <div class="productClassfix_addAlert" style="display:none;">
+                                      <div class="productClassfix_addAlert_top clearfix">
+                                        <p class="fl">新建</p>
+                                        <div class="fr" id="closeProductClassfix_addAlert" style="font-size:16px;cursor:pointer;">
+                                          x
+                                        </div>
+                                      </div>
+                                      <div class="productClassfix_addAlert_bot clearfix">
+                                          <div class="productClassfix_addAlert_input fl">
+                                                <input type="text" placeholder="请输入不超过十个字" id="pc_addAlert_input">
+                                          </div>
+                                          <div class="productClassfix_addAlert_btn fr">
+                                              确定
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="productG_content_bot" style="height:627px;padding-top:10px;">
+                            <!-- 表格 -->
+                            <div class="productL_content_table clearfix">
+                              <div class="productG_content_table fl" style="margin-left:10px; width:auto;">
+                                      <ul class="clearfix productG_content_ul1">
+                                             <li class="productC_content_table1 fl">
+                                               <div class="productG_table_select" style="margin:10px auto;">
+
+                                               </div>
+                                             </li>
+                                             <li class="productC_content_table2 fl">分类编号</li>
+                                             <li class="productC_content_table2 fl">分类名称</li>
+                                             <li class="productC_content_table3 fl">
+                                               排序
+                                             </li >
+                                             <li class="productC_content_table4  fl">
+                                              添加子分类
+                                             </li>
+                                             <li class="productC_content_table5  fl">
+                                               操作
+                                             </li>
+                                         </ul>
+                                         <!-- <ul class="clearfix productG_content_ul1">
+                                                <li class="productC_content_table1 fl">
+                                                  <div class="productG_table_select" style="margin:10px auto;">
+
+                                                  </div>
+                                                </li>
+                                                <li class="productC_content_table2 fl">1</li>
+                                                <li class="productC_content_table2 fl" >
+                                                    sss
+
+                                                </li>
+                                                <li class="productC_content_table3 fl">
+                                                    <section class="productC_zhiding fl">
+
+                                                    </section>
+                                                    <section class="productC_up fl">
+
+                                                    </section>
+                                                    <section  class="productC_dowm fl">
+
+                                                    </section>
+                                                    <section class="productC_zhidi fl">
+
+                                                    </section>
+                                                </li >
+                                                <li class="productC_content_table4  fl">
+
+                                                  <div class="productC_child fl">
+                                                    <div class="fl" style="margin-left:4px">
+                                                        <input type="text" name="name" class="productC_child_WType">
+                                                    </div>
+                                                    <div class="productC_contentf_LOGO fl">
+
+                                                    </div>
+                                                    <div class="fr" style="font-size:16px;margin-right:6px;">
+                                                        x
+                                                    </div>
+                                                  </div>
+                                                  <div class="productC_child_add fl">
+                                                      <div class="fl productC_child_blue">
+                                                          +
+                                                      </div>
+                                                      <div class="fl">
+                                                          添加子分类
+                                                      </div>
+                                                  </div>
+                                                </li>
+                                                <li class="productC_content_table5  fl">
+                                                  <div class="productC_contro fl">
+                                                    <div class="productC_contro_edit fl">
+
+                                                    </div>
+                                                    <div class="fl">
+                                                        编辑
+                                                    </div>
+                                                  </div>
+                                                  <div class="productC_contro fl">
+                                                    <div class="productC_contro_delete fl ">
+
+                                                    </div>
+                                                    <div class="fl">
+                                                        删除
+                                                    </div>
+                                                  </div>
+                                                </li>
+                                            </ul> -->
+
+                              </div>
+                              <div class="j_con_main_con_nav">
+                                  <ul class="clearfix">
+                                      <li>首页</li>
+                                      <li>&lt;&lt;</li>
+                                      <li class="current">1</li>
+                                      <li>2</li>
+                                      <li>...</li>
+                                      <li>10</li>
+                                      <li>&gt;&gt;</li>
+                                      <li>尾页</li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+
+        </div>
+  </body>
+    <script type="text/javascript" src="../gjs/jquery.min.js">  </script>
+    <script type="text/javascript" src="../gjs/base.js">  </script>
+    <script type="text/javascript" src="../gjs/app.js">  </script>
+
+    <script type="text/javascript">
+          $(function(){
+            productClassfix();
+          })
+    </script>
+</html>
