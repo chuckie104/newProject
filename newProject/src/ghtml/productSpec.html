@@ -12,6 +12,9 @@
       .productG_alert_select_top{
         color: #333;
       }
+      .productC_child_add{
+        width: 102px;
+      }
       .j_con_main_con_nav{position: absolute;bottom: 13px;left: 50%;transform: translate(-50%, 0);line-height: 18px;}
       .j_con_main_con_nav ul li{float: left;margin-right: 8px;cursor: pointer;}
       .j_con_main_con_nav ul li.current{color: #00abeb;}
@@ -21,7 +24,7 @@
   <body>
         <div id="productList">
 
-                <div class="alert" id="productSpec_edit" >
+                <div class="alert" id="productSpec_edit" style="display:none;">
                     <div class="productG_alert_select">
                       <div class="productG_alert_select_top clearfix">
                           <div class="fl" style="padding-left:10px;">
@@ -34,14 +37,14 @@
                       <div class="productG_alert_select_bot clearfix">
                           <div class="productSpec_alert_middle clearfix">
                                 <div class="productSpec_aleaSelect_box fl">
-                                      <div class="productSpec_aleaSelect">
+                                      <!-- <div class="productSpec_aleaSelect fl">
                                           <div >
                                               颜色
                                           </div>
                                           <div class="closeAleaSelect">
                                               x
                                           </div>
-                                      </div>
+                                      </div> -->
                                 </div>
                                 <div class="productSpec_aleaSelect_sure fr">
                                     确定
@@ -52,50 +55,16 @@
                                 可选常用规格:
                               </p>
                               <div class="productSpec_select_box">
-                                    <ul class="clearfix">
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
-                                        <li>
-                                            颜色
-                                        </li>
+                                    <ul class="clearfix" id="productSpec_select_box">
+                                        <li>颜色</li>
+                                        <li>大小</li>
                                     </ul>
                               </div>
                           </div>
                       </div>
                     </div>
                 </div>
-              </div>
+
               <div class="homePage_header">
                     <div class="homePage_logo">
 
@@ -179,107 +148,12 @@
                                                操作
                                              </li>
                                         </ul>
-                                        <ul class="clearfix productG_content_ul1">
-                                                <li class="productC_content_table1 fl">
-                                                  <div class="productG_table_select" style="margin:10px auto;">
+                                        <div class="productParame_box">
 
-                                                  </div>
-                                                </li>
-                                                <li class="productC_content_table2 fl">1</li>
-                                                <li class="productS_content_table3 fl">
-                                                  颜色
-                                                </li >
-                                                <li class="productS_content_table4  fl">
-                                                  <div class="productC_child fl">
-                                                    <div class="fl" style="margin-left:4px">
-                                                        红色
-                                                    </div>
-                                                    <div class="productC_contentf_LOGO fl">
+                                        </div>
 
-                                                    </div>
-                                                    <div class="fr" style="font-size:16px;margin-right:6px;">
-                                                        x
-                                                    </div>
-                                                  </div>
-                                                  <div class="productC_child_add fl">
-                                                      <div class="fl productC_child_blue">
-                                                          +
-                                                      </div>
-                                                      <div class="fl">
-                                                          添加子分类
-                                                      </div>
-                                                  </div>
-                                                </li>
-                                                <li class="productC_content_table5  fl">
-                                                  <div class="productC_contro fl">
-                                                    <div class="productC_contro_edit fl">
 
-                                                    </div>
-                                                    <div class="fl">
-                                                        编辑
-                                                    </div>
-                                                  </div>
-                                                  <div class="productC_contro fl">
-                                                    <div class="productC_contro_delete fl ">
-
-                                                    </div>
-                                                    <div class="fl">
-                                                        删除
-                                                    </div>
-                                                  </div>
-                                                </li>
-                                          </ul>
-                                          <ul class="clearfix productG_content_ul1">
-                                                  <li class="productC_content_table1 fl">
-                                                    <div class="productG_table_select" style="margin:10px auto;">
-
-                                                    </div>
-                                                  </li>
-                                                  <li class="productC_content_table2 fl">1</li>
-                                                  <li class="productS_content_table3 fl">
-                                                    尺寸
-                                                  </li >
-                                                  <li class="productS_content_table4  fl">
-                                                    <div class="productC_child fl">
-                                                      <div class="fl" style="margin-left:4px">
-                                                          红色
-                                                      </div>
-                                                      <div class="productC_contentf_LOGO fl">
-
-                                                      </div>
-                                                      <div class="fr" style="font-size:16px;margin-right:6px;">
-                                                          x
-                                                      </div>
-                                                    </div>
-                                                    <div class="productC_child_add fl">
-                                                        <div class="fl productC_child_blue">
-                                                            +
-                                                        </div>
-                                                        <div class="fl">
-                                                            添加子分类
-                                                        </div>
-                                                    </div>
-                                                  </li>
-                                                  <li class="productC_content_table5  fl">
-                                                    <div class="productC_contro fl">
-                                                      <div class="productC_contro_edit fl">
-
-                                                      </div>
-                                                      <div class="fl">
-                                                          编辑
-                                                      </div>
-                                                    </div>
-                                                    <div class="productC_contro fl">
-                                                      <div class="productC_contro_delete fl ">
-
-                                                      </div>
-                                                      <div class="fl">
-                                                          删除
-                                                      </div>
-                                                    </div>
-                                                  </li>
-                                            </ul>
-                                            <ul class="clearfix productG_content_ul1">
+                                            <!-- <ul class="clearfix productG_content_ul1">
                                                     <li class="productC_content_table1 fl">
                                                       <div class="productG_table_select" style="margin:10px auto;">
 
@@ -328,7 +202,7 @@
                                                         </div>
                                                       </div>
                                                     </li>
-                                              </ul>
+                                              </ul> -->
 
                               </div>
                               <div class="j_con_main_con_nav">
@@ -356,7 +230,7 @@
 
     <script type="text/javascript">
           $(function(){
-            // homePage();
+            productSpec();
           })
     </script>
 </html>

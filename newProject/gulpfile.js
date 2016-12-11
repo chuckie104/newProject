@@ -135,13 +135,13 @@ gulp.task('tpl', function() {
 
 });
 
+// gulp.watch(jsSrc, ['js','minijs']); // 监控html
 
 
 // 监视文件的变化
 gulp.task('watch', function() {
     gulp.watch(scssSrc,['scss']);  //监控scss
     gulp.watch(htmlSrc, ['html']); //监控html
-    gulp.watch(jsSrc, ['js','minijs']); // 监控html
     gulp.watch(cssSrc, ['css','minicss']); //监控css
 });
 

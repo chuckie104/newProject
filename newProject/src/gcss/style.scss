@@ -385,9 +385,10 @@ $mainRed:#c83333;
 .storeHome_content{
   padding-top: 10px;
   margin-left: 360px;
-
   height: 336px;
   background-color: #fff;
+  width: 1036px;
+  margin:  0 auto;
 }
 
 
@@ -440,6 +441,11 @@ $mainRed:#c83333;
 .storeHome_aside_listActive{
   color: #438eb9 !important;
   background-color: $greyBorder;
+}
+
+.productClassfix_listActive{
+  color: #438eb9 !important;
+  background-color: #fff;
 }
 
 .storeHome_aside_list_logo1{
@@ -649,7 +655,8 @@ $mainRed:#c83333;
 
 .productG_content_wrapall{
   padding-top: 10px;
-    margin-left: 360px;
+  width: 1080px;
+  margin: 0 auto;
 }
 
 .important_xing{
@@ -1352,7 +1359,7 @@ $mainRed:#c83333;
 .productList_content{
   padding-top: 10px;
   width: 1036px;
-  margin-left: 400px;
+  margin: 0 auto;
 }
 
 .productList_content_aside{
@@ -1364,13 +1371,15 @@ $mainRed:#c83333;
   padding-top: 10px;
   ul{
     width: 100%;
-    padding-left: 20px;
+
   }
   li{
     cursor: pointer;
     width: 100%;
     float: left;
+    padding-left: 20px;
     line-height: 30px;
+    box-sizing: border-box;
   }
 }
 
@@ -1594,6 +1603,7 @@ $mainRed:#c83333;
   border-radius: 4px;
   line-height: 20px;
   margin:10px 4px ;
+  cursor: pointer;
 }
 
 .productC_contro,.productC_del{
@@ -1619,6 +1629,14 @@ $mainRed:#c83333;
   height: 10px;
   background: url("../images/xiugai.png") no-repeat;
   margin: 5px;
+}
+
+.productS_contentf_LOGO {
+  width: 25px;
+  height: 20px;
+  background:#fff url("../images/true.png") no-repeat;
+  background-size:12px 12px;
+  background-position: 6px 4px;
 }
 
 .productC_contro_delete{
@@ -1682,6 +1700,7 @@ $mainRed:#c83333;
 .productSpec_aleaSelect{
   @include allBtn(50px,26px,#56a1cd,#fff);
   position: relative;
+  margin-right: 8px;
 }
 
 .productClassfix_addAlert_btn{
@@ -1744,11 +1763,286 @@ $mainRed:#c83333;
   background-color: inherit;
 }
 
-// .productC_typeName_input{
-//   height: 20px;
-//   width: 62px;
-//   margin-left: 10px;
-//   margin-top: 10px;
-//   border: none;
-//   background-color: inherit;
-// }
+.productS_Del_value{
+  cursor:pointer;
+}
+
+.createApp_content{
+  padding-top: 10px;
+  width: 1200px;
+  margin:  0 auto;
+
+}
+
+.createApp_content_aside{
+  height: 330px;
+  width: 158px;
+  border: 1px solid $greyBorder;
+  border-radius: 4px;
+  color: #333;
+}
+
+.createApp_content_aside_title{
+  font-size: 14px;
+  color: #333;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.createApp_content_aside_list{
+  border-bottom: 1px solid $greyBorder;
+  li{
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+.createApp_content_aside_list2{
+  li{
+    width: 100%;
+    height: 30px;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+  }
+}
+
+.createApp_content_right{
+  width: 980px;
+  margin-left: 30px;
+  background-color: #fff;
+}
+
+.createApp_content_right_top{
+  width: 100%;
+  font-size: 14px;
+  color: #333;
+  line-height: 36px;
+  background-color: #dedede;
+
+}
+.createApp_content_right_bot{
+  width: 100%;
+  height: 670px;
+}
+
+.createApp_content_right_wrap{
+  width: 854px;
+  margin: 0 auto;
+}
+
+.createApp_right_wrap_top{
+  width: 100%;
+  height: 320px;
+  padding-top: 50px;
+  text-align: center;
+  border-bottom: 1px solid $greyBorder;
+}
+
+.createApp_jindu{
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+  background-color: #d8e7f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.createApp_wrap{
+  width: 222px;
+  height: 222px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.createApp_info{
+  text-align: center;
+  color: #999999;
+  margin-top: 30px;
+}
+
+.createApp_right_wrap_bot_content{
+  width: 810px;
+  height: 120px;
+  padding-top:30px;
+  margin: 0 auto;
+}
+
+.createApp_appLogo{
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  background-color: #f3d1af;
+  overflow: hidden;
+  margin-right: 28px;
+}
+
+.createApp_status{
+  line-height: 24px;
+  em{
+    display: inline-block;
+    width: 56px;
+  }
+  span{
+    display: inline-block;
+
+  }
+}
+
+.createApp_gongneng{
+  width: 380px;
+  margin-top: 32px;
+  li{
+    width: 126px;
+    float: left;
+    margin-bottom: 14px;
+  }
+}
+
+.cglogo1{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: 0 0;
+}
+
+.cglogo2{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: -127px 0;
+}
+.cglogo3{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: -258px 0;
+}
+
+.cglogo4{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: -2px -38px;
+}
+
+.cglogo5{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: -127px -38px;
+}
+.cglogo6{
+  width: 24px;
+  height: 22px;
+  background: url("../images/app.png") no-repeat;
+  background-position: -260px -38px;
+}
+
+.editApp_contentbot{
+  padding-top: 10px;
+  width: 100%;
+  height: 920px;
+  background-color: #fff;
+}
+
+.editApp_online{
+  width: 78px;
+  text-align: right;
+  height: 22px;
+  line-height: 22px;
+  margin-right: 16px;
+  margin-top: 1px;
+}
+
+.editApp_inputname{
+  width: 224px;
+  border: 1px solid #e5e5e5;
+  background-color: #fafafa;
+  margin-left: 8px;
+
+  input{
+    border: none;
+    width: 220px;
+    padding-left: 2px;
+    height: 22px;
+    line-height: 22px;
+  }
+}
+
+.editApp_inputname_info{
+  line-height: 22px;
+  margin-left: 10px;
+}
+
+.editApp_bigColor{
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #db5151;
+  margin-right: 14px;
+}
+
+.editApp_colorBox_input{
+  border: 2px solid $greyBorder;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 100px;
+  height: 20px;
+  padding-left: 4px;
+  margin-top: 20px;
+  input{
+    width:90px;
+
+    height: 100%;
+    line-height: 20px;
+    border: none;
+  }
+}
+
+#editApp_colorBox_list{
+  margin-top: 10px;
+  li{
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: red;
+  }
+}
+
+#editapp_yindao{
+  li{
+    float: left;
+    margin-right: 30px;
+  }
+}
+
+.version_input_wrap{
+  width: 46px;
+  height: 20px;
+  border: 1px solid $greyBorder;
+  background-color: #fafafa;
+  padding-left: 4px;
+  input{
+    width: 100%;
+    height: 20px;
+    border: none;
+    line-height: 20px;
+  }
+}
+
+.editApp_version_input{
+  line-height: 22px;
+
+}
+
+.editApp_lastBtn{
+  @include allBtn(90px,26px,#449cce,#fff);
+  margin: 60px auto;
+}
