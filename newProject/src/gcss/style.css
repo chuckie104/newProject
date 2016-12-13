@@ -592,7 +592,12 @@
   width: 224px;
   border: 1px solid #e5e5e5;
   background-color: #fafafa;
-  margin-left: 8px; }
+  margin-left: 8px;
+  height: 20px;
+  position: relative; }
+
+#product_type_select {
+  background-color: #fff; }
 
 .productG_content_leftInput {
   font-size: 12px;
@@ -1787,3 +1792,25 @@
   color: #fff;
   cursor: pointer;
   margin: 60px auto; }
+
+.product_type_hasSelect {
+  width: 100%;
+  height: 100%;
+  text-align: center; }
+
+.product_type_box {
+  display: none;
+  position: absolute;
+  left: -1px;
+  top: 20px;
+  width: 100%;
+  border: 1px solid #dedede;
+  background-color: #fff; }
+  .product_type_box div {
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    height: 20px;
+    border-bottom: 1px solid #dedede; }
+  .product_type_box div:hover {
+    background-color: #00abeb; }

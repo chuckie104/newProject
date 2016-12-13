@@ -644,3 +644,106 @@ function productSpec(){
     })
   }
 }
+
+//产品添加页
+function productList(){
+  //获取分类列表
+  $(".product_type_hasSelect").click(function(){
+    $(".product_type_box").toggle();
+    var __length =$(".product_type_box").find("div").length;
+    if(__length==0){
+      ajax(""+url+"wangjian/api/productType/listProduct","post",{merchantId:"44"})
+      .then((data)=>{
+        var {resultCode,resultMessage,resultData} =data;
+        if(resultCode==0){
+          //下来的div集合声明
+          var divList="";
+          for(var i in resultData){
+            var json = resultData[i];
+            var {id,typeName} =json;
+            divList+=`<div class="product_type_box_list" data=${id}>
+            ${typeName}
+            </div> `;
+          }
+          $(".product_type_box").append(divList);
+        }
+      })
+    }
+    return false;
+  });
+  //点击选取分类的值
+  $(".product_type_box").delegate('.product_type_box_list', 'click', function(event) {
+    //获取点击的值
+        var oText = $(this).text();
+        var oData = $(this).attr("data");
+        $(".product_type_hasSelect").text(oText);
+        $(".product_type_hasSelect").attr("data",oData);
+        $(".product_type_box").hide();
+  });
+
+  //获取产品规格数据
+  ajax(""+url+"wangjian/api/productType/productParamValuesCollection","post",{merchantId:"44"})
+  .then((data)=>{
+    var {resultCode,resultMessage,resultData} =data;
+    if(resultCode==0){
+      var productParameList="";
+      //规格数组
+      for(var i in resultData){
+        var paramValueList="";
+        //名字
+        var paramName = resultData[i].paramName;
+        var paramValue = resultData[i].paramValue;
+        //规格子规格数组
+        for(var a in paramValue){
+          var {id,paramValue:newParamValue} = paramValue[a];
+          paramValueList+=`<li data=${id}>
+                              <div class="productG_table1_select fl"></div>
+                              <div class="fl">${newParamValue}</div>
+                            <li>`;
+        }
+        productParameList+=`  <div class="productList_specBox">
+            <div class="productList_color clearfix">
+              <div class="productList_left_text fl">
+                ${paramName}
+              </div>
+              <div class="productList_color_box fl">
+                <ul class="clearfix">
+                  ${paramValueList}
+                </ul>
+              </div>
+            </div>
+            <div class="productG_content_table_info" style="margin-left:96px;">
+              (提示：以上是系统初始化的规格样本，可以在左侧菜单中的“产品规格”处删除新增适合您产品的规格)
+            </div>
+          </div>`;
+        var tableBox = `<li class="productL_content_table1 fl">${paramName}</li>`;
+        $(tableBox).insertBefore('#productL_content_table2');
+      }
+      $(productParameList).insertBefore('.productL_content_table');
+    }
+  })
+
+  //保存按钮
+  $(".productG_content_saveBtn").click(function(){
+    //商家id
+    var merchantId="44";
+
+    //产品名称
+    var productName =$("#productNameIn").val();
+
+    //产品分类id
+    var typeId=$(".product_type_hasSelect").attr("data");
+
+    //产品编号
+    var productNo=$("#productNumIn").val();
+
+    //单位重量
+    var unit=$("#productKgIn").val();
+
+    //产品图片id
+    var productPictureId;
+
+    //海报图片id
+    var billId;
+  });
+}
