@@ -404,21 +404,7 @@ function productSpec(){
     $("#productSpec_edit").hide();
   });
 
-  //获取常用数据
-  // function ajaxAleady(){
-  //   ajax(""+url+"wangjian/api/productType/productParamList","post",{})
-  //   .then((data)=>{
-  //     var {resultCode,resultMessage,resultData} =data;
-  //     if(resultCode==0){
-  //       //点击的list
-  //       var btnList="";
-  //       for(var i in resultData){
-  //         btnList+=`<li>${resultData[i].paramName}</li>`;
-  //       }
-  //       $("#productSpec_select_box").append(btnList);
-  //     }
-  //   })
-  // }
+
 
   //删除产品规格
   $(document).delegate('.productC_del', 'click', function(event) {
@@ -611,7 +597,7 @@ function productSpec(){
     })
   }
 
-  //获取产品规格值
+  //获取产品规格值yzwjn 1236 http://www.fmdisk.com/file-799571.html
   function getProductValue(merchantId,paramId,object){
     var parents=   object.parents("ul");
     parents.find(".productC_child ").remove();
@@ -695,8 +681,8 @@ function productList(){
         var paramValue = resultData[i].paramValue;
         //规格子规格数组
         for(var a in paramValue){
-          var {id,paramValue:newParamValue} = paramValue[a];
-          paramValueList+=`<li data=${id}>
+          var {id,paramValue:newParamValue,paramId} = paramValue[a];
+          paramValueList+=`<li data=${id} paramId=${paramId}>
                               <div class="productG_table1_select fl"></div>
                               <div class="fl">${newParamValue}</div>
                             <li>`;
@@ -716,7 +702,7 @@ function productList(){
               (提示：以上是系统初始化的规格样本，可以在左侧菜单中的“产品规格”处删除新增适合您产品的规格)
             </div>
           </div>`;
-        var tableBox = `<li class="productL_content_table1 fl">${paramName}</li>`;
+        var tableBox = `<li class="productL_content_table1 fl" paramId=${paramId}>${paramName}</li>`;
         $(tableBox).insertBefore('#productL_content_table2');
       }
       $(productParameList).insertBefore('.productL_content_table');
@@ -725,25 +711,230 @@ function productList(){
 
   //保存按钮
   $(".productG_content_saveBtn").click(function(){
+
     //商家id
     var merchantId="44";
 
     //产品名称
     var productName =$("#productNameIn").val();
 
+    if($.trim(productName)==""||$.trim(productName)===null){
+      alert("产品名称不能为空");
+      return;
+    }
+
+    var productNumIn=$("#productNumIn").val();
+
+    if($.trim(productNumIn)==""||$.trim(productNumIn)===null){
+      alert("产品编号不能为空");
+      return;
+    }
+
     //产品分类id
     var typeId=$(".product_type_hasSelect").attr("data");
+
+    if(typeId==undefined){
+      alert("请选择产品分类");
+      return;
+    }
+
+
 
     //产品编号
     var productNo=$("#productNumIn").val();
 
+    if($.trim(productNo)==""||$.trim(productNo)===null){
+      alert("产品编号不能为空");
+      return;
+    }
+
     //单位重量
     var unit=$("#productKgIn").val();
 
-    //产品图片id
-    var productPictureId;
+    if($.trim(unit)==""||$.trim(unit)===null){
+      alert("单位重量不能为空");
+      return;
+    }
+    //声明产品json
+    var goodInfos=[];
 
+
+
+    var liLength=$(".productList_box").find("ul").length;
+
+      if(liLength==0){
+        alert("请先生成产品");
+      }else{
+
+      for(var i =0;i<liLength;i++){
+        var goodInfo={};
+        //父亲id
+        var paramId1 =$("#productList_id").find(".productL_content_table1").eq(1).attr("paramId");
+
+        //儿子id
+        var paramValueId1 =$(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_table1").eq(1).attr("paramValueId1");
+        //商品状态
+        var state="1";
+        //商品库存
+        var productStock=$(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_table2").eq(0).text();
+        //最低售价
+        var price=$(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_table2").eq(1).text();
+        //成本价
+        var costPrice=$(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_table2").eq(2).text();;
+        //销售价
+        var sellPrice=11;
+
+        //
+        var paramId2 =$("#productList_id").find(".productL_content_table1").eq(2).attr("paramId");
+        var paramValueId2 = $(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_table1").eq(2).attr("paramValueId2");;
+        var goodPictureId=$(".productList_box").find(".productG_content_ul1").eq(i).find(".productL_content_upload_btn").attr("productPictureId");
+        goodInfo.productId ="";
+        goodInfo.sellPrice=sellPrice;
+        goodInfo.paramId1=paramId1;
+        goodInfo.paramValueId1=paramValueId1;
+        goodInfo.paramId2=paramId2;
+        goodInfo.paramValueId2=paramValueId2;
+        goodInfo.statue=state;
+        // productStock=parseInt(productStock);
+        goodInfo.productStock=productStock;
+        // price=parseInt(price);
+        goodInfo.price=price;
+        // costPrice=parseInt(costPrice);
+        goodInfo.costPrice=costPrice;
+        goodInfo.goodPictureId=goodPictureId;
+        goodInfos.push(goodInfo);
+      }
+
+    }
+
+
+
+    //产品图片id
+    var productPictureId=$("#productL_img_upload").attr("productPictureId");
+    if(productPictureId==undefined){
+      alert("请上传产品图片");
+      return;
+    }
     //海报图片id
-    var billId;
+    var billId=$("#productL_banner_upload").attr("billId");
+    if(billId==undefined){
+      alert("请上传海报");
+      return;
+    }
+
+    var json={};
+    json.merchantId=merchantId;
+    json.productName=productName;
+    json.typeId=typeId;
+    json.unit=unit;
+    json.goodInfo=JSON.stringify(goodInfos);
+    json.productPictureId=productPictureId;
+    json.billId=billId;
+    json.productNo=productNumIn;
+
+    console.log(JSON.stringify(json));
+
+    ajax(""+url+"wangjian/api/productType/productAdd","post",json)
+    .then((data)=>{
+      var {resultCode,resultMessage,resultData} =data;
+      if(resultCode==0){
+        alert("生成产品成功");
+      }else{
+        alert("失败");
+      }
+    }).catch((data)=>{
+      alert(data.responseText);
+    })
   });
+
+
+    //选中的规格
+    $(document).delegate('.productG_table1_select', 'click', function(event) {
+        $(this).addClass('productG_table1_selectActive');
+        //父亲的index
+        var oIndex= $(this).parents(".productList_specBox").index();
+
+        //拿到自己的text
+        var thisText=$(this).siblings('div').text();
+        //拿到自己的id
+        var id = $(this).parent("li").attr("data");
+        //拿到自己父亲的id
+        var paramId =$(this).parent("li").attr("paramId");
+        //兄弟div的长度
+        var broLength = $(this).parents('.productList_specBox').siblings('.productList_specBox').find(".productG_table1_selectActive").length;
+
+        if(broLength>0){
+            // 装选择的type的数组
+            var array=[];
+            var idArray=[];
+            var paramIdArray=[];
+            for(var i =0;i<broLength;i++){
+            var _$object = $(this).parents('.productList_specBox').siblings('.productList_specBox').find(".productG_table1_selectActive").eq(i);
+            //拿到子规格的text
+            var oText = _$object.siblings('div').text();
+            //拿子规格id
+            var sId = _$object.parent("li").attr("data");
+
+            //拿子规格的parameid
+            var sParamId = _$object.parent("li").attr("paramId");
+            array.push(oText);
+            idArray.push(sId);
+            paramIdArray.push(sParamId);
+            }
+          //返回list  array点击另一边的参数列表  thisText当前点击的文本
+          var _oList = appendKu(array,thisText,oIndex, id ,paramId ,idArray,paramIdArray);
+
+          $(".productList_box").append(_oList);
+        }
+    });
+
+    //添加到库存的函数
+    function appendKu(array,text,index,myId,myParamID,idArray,paramIdArray){
+        //遍历进来的数组
+        var list="";
+        for(var i in array){
+          if(index==2){
+            var _String=` <li class="productL_content_table1 fl" paramId1=${myId} paramValueId1=${myParamID}>${text}</li>
+                          <li class="productL_content_table1 fl" paramId2=${idArray[i]} paramValueId2=${paramIdArray[i]}>${array[i]}</li>`;
+          }else if(index==3){
+            // 如果先选上面再选下面
+            var _String=` <li class="productL_content_table1 fl" paramId1=${idArray[i]} paramValueId1=${paramIdArray[i]}>${array[i]}</li>
+                          <li class="productL_content_table1 fl" paramId2=${myId} paramValueId2=${myParamID}>${text}</li>`;
+          }
+          var random = Math.random()*1000;
+              random =Math.random()*random;
+              random =Math.floor(random);
+          list+=`  <ul class="clearfix productG_content_ul1">
+                   <li class="productL_content_table1 fl">
+                     <div class="productG_table_select" style="margin:10px auto;">
+
+                     </div>
+                   </li>
+                   ${_String}
+                   <li class="productL_content_table2 fl" contentEditable="true">
+
+                   </li >
+                   <li class="productL_content_table2  fl" contentEditable="true">
+
+                   </li>
+                   <li class="productL_content_table2  fl"contentEditable="true">
+
+                   </li>
+                   <li class="productL_content_table3  fl">
+                        <div class="fl prodect_list_imgS" style="color:blue;margin-left:10px;cursor:point;display:none;">
+                            [ IMG ]
+                        </div>
+                        <div class="fr productL_content_upload_btn" style="margin-top:8px;margin-right:6px;">
+                            <input type="file" accept="image/*;capture=camera" id="fileImg${random}" name="file" onchange=tableAjaxImg("fileImg${random}")>
+                            <p>
+                              上传图片
+                            </p>
+                        </div>
+                   </li>
+
+            </ul>`;
+        }
+        return list;
+    }
+
 }

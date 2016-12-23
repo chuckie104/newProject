@@ -2,7 +2,7 @@ $mainBlue:#00abeb;
 $greyBorder:#dedede;
 $mainRed:#c83333;
 
-@mixin allBtn($width,$height,$color,$fontColor){
+@mixin allBtn($width,$height,$color:#4d98c2,$fontColor:#fff){
     width: $width;
     height: $height;
     background-color: $color;
@@ -1498,6 +1498,16 @@ $mainRed:#c83333;
   @include allBtn(90px,24px,#4394c2,#fff);
   margin: 68px 0 0 10px;
   font-size: 12px;
+  position: relative;
+
+  input{
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+  }
 }
 
 
@@ -2079,4 +2089,54 @@ $mainRed:#c83333;
    div:hover{
      background-color: #00abeb;
    }
+}
+
+#productL_img_upload{
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+#productL_banner_upload{
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.productL_content_table3{
+  width: 180px;
+}
+
+.productGL_newProduct{
+  @include allBtn(80px,30px);
+  margin-right: 10px;
+}
+
+.productGL_search
+{
+  width: 200px;
+  height: 24px;
+  background-color: #c9c9c9;
+  position: relative;
+  input{
+    border: none;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    line-height: 24px;
+    padding:  0 2px;
+    background-color: transparent;
+  }
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+#search_logo{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  right: 4px;
 }

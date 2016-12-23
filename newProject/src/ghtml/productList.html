@@ -8,7 +8,7 @@
 
   </head>
   <body>
-        <div id="productList">
+        <div id="productList" >
               <div class="homePage_header">
                     <div class="homePage_logo">
 
@@ -25,7 +25,7 @@
                           创建店铺
                     </div>
               </div>
-              <div class="productList_content clearfix">
+              <div class="productList_content clearfix" style="width:1200px">
                     <div class="productList_content_aside fl">
                         <ul class="clearfix">
                             <li class="productClassfix_listActive">
@@ -44,7 +44,7 @@
                                     产品分类
                                 </div>
                             </li>
-                            <li>
+                            <li onclick="toParams()">
                                 <div class="productList_aside_logo3 fl">
 
                                 </div>
@@ -54,7 +54,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="productG_content fl">
+                    <div class="productG_content fl" style="width:1000px;">
                         <div class="productG_content_top clearfix">
                               <p class="productG_content_topT fl">
                                   新推产品
@@ -251,7 +251,7 @@
                                   </div>
                               </div>
                               <div class="productG_content_table fl" style="margin-left:10px; width:auto;">
-                                       <ul class="clearfix productG_content_ul1">
+                                       <ul class="clearfix productG_content_ul1" id="productList_id">
                                             <li class="productL_content_table1 fl">选择库存单品</li>
                                             <!-- <li class="productL_content_table1 fl">颜色</li>
                                             <li class="productL_content_table1 fl">尺码</li> -->
@@ -278,26 +278,15 @@
                                                 成本价
                                               </div>
                                             </li>
+                                            <li class="productL_content_table3 fl">
+                                              <div  style="text-align:center;">
+                                                产品图片
+                                              </div>
+                                            </li>
                                         </ul>
-                                      <ul class="clearfix productG_content_ul1">
-                                             <li class="productL_content_table1 fl">
-                                               <div class="productG_table_select" style="margin:10px auto;">
+                                        <div class="productList_box">
 
-                                               </div>
-                                             </li>
-                                             <li class="productL_content_table1 fl">颜色</li>
-                                             <li class="productL_content_table2 fl" contentEditable="true">
-                                               400,820,90
-                                             </li >
-                                             <li class="productL_content_table2  fl" contentEditable="true">
-                                              999
-                                             </li>
-                                             <li class="productL_content_table2  fl"contentEditable="true">
-                                
-                                                 60
-
-                                             </li>
-                                      </ul>
+                                        </div>
 
                               </div>
                             </div>
@@ -315,11 +304,14 @@
                                   </div>
                               </div>
                               <div class="productL_content_upload_box fl" >
-                                <div class="productL_content_upload fl">
+                                <div class="productL_content_upload fl" id="productL_img_upload">
 
                                 </div>
                                 <div class="productL_content_upload_btn fl">
-                                    上传图片
+                                  <input type="file" accept="image/*;capture=camera" id="fileImg" name="file" onchange=imgAjax("fileImg")>
+                                    <p>
+                                      上传图片
+                                    </p>
                                 </div>
                               </div>
                               <div class="productL_content_Left fl" style="margin-top:18px; margin-left:50px;">
@@ -331,11 +323,14 @@
                                   </div>
                               </div>
                               <div class="productL_content_upload_box fl">
-                                  <div class="productL_content_upload fl">
+                                  <div class="productL_content_upload fl" id="productL_banner_upload">
 
                                   </div>
                                   <div class="productL_content_upload_btn fl">
-                                      上传图片
+                                      <input type="file" accept="image/*;capture=camera" id="file" name="file" onchange=bannerAjax("file")>
+                                      <p>
+                                        上传图片
+                                      </p>
                                   </div>
                               </div>
                             </div>
@@ -350,6 +345,8 @@
         </div>
   </body>
     <script type="text/javascript" src="../gjs/jquery.min.js">  </script>
+    <script type="text/javascript" src="../gjs/exif.js">  </script>
+    <script type="text/javascript" src="../gjs/ajaxfileupload.js">  </script>
     <script type="text/javascript" src="../gjs/base.js">  </script>
     <script type="text/javascript" src="../gjs/app.js">  </script>
 
@@ -357,5 +354,118 @@
           $(function(){
             productList();
           })
+
+        function tableAjaxImg(param){
+          // drawTempPhoto($("#productL_img_upload")
+          var fileName = $("#"+param).val().substring($("#"+param).val().lastIndexOf("\\")+1);
+          var fileType=fileName.substring(fileName.lastIndexOf(".")+1);
+          if(fileType!="jpg"&&fileType!="png"&&fileType!="gif"&&fileType!="jpeg"&&fileType!="JPEG"&&fileType!="JPG"){
+            alertOnline("请上传图片jpg、jpeg、png、gif文件");
+            return;
+          }
+          $.ajaxFileUpload({
+               url : ""+url+"wangjian/api/productType/pictureUpload",//服务器地址
+               secureuri: false,
+               data:{pictureType:1},
+               fileElementId:param,
+               type:'post',
+               success : function(data){
+                 //try语句块
+                 var oText =   $(data).find("pre").text();
+                 var newJson = JSON.parse(oText);
+                 var {resultCode,resultData} =newJson;
+                 if(resultCode==0){
+                   //图片id 图片分类 图片路径
+                   var {id,type,picUrl}= resultData;
+                   var _div=$("#"+param).parent("div").siblings('.prodect_list_imgS');
+                   _div.show();
+
+                   $("#"+param).parent().attr("url",picUrl);
+
+                   $("#"+param).parent().attr("productPictureId",id);
+
+                  //  console.log($("#"+param).parent().attr("url"));
+                  //  console.log($("#"+param).parent());
+
+                 }
+               },error : function(e){ // 相当于java中catch语句块的用法
+                   alert(JSON.stringify(e));
+               }
+
+           });
+        }
+          //上传产品图片
+        function imgAjax(param){
+            // drawTempPhoto($("#productL_img_upload")
+            var fileName = $("#"+param).val().substring($("#"+param).val().lastIndexOf("\\")+1);
+            var fileType=fileName.substring(fileName.lastIndexOf(".")+1);
+            if(fileType!="jpg"&&fileType!="png"&&fileType!="gif"&&fileType!="jpeg"&&fileType!="JPEG"&&fileType!="JPG"){
+              alertOnline("请上传图片jpg、jpeg、png、gif文件");
+              return;
+            }
+            $.ajaxFileUpload({
+                 url : ""+url+"wangjian/api/productType/pictureUpload",//服务器地址
+                 secureuri: false,
+                 data:{pictureType:1},
+                 fileElementId:param,
+                 type:'post',
+                 success : function(data){ //try语句块
+                   var oText =   $(data).find("pre").text();
+
+                   var newJson = JSON.parse(oText);
+                   var {resultCode,resultData} =newJson;
+                   if(resultCode==0){
+                     //图片id 图片分类 图片路径
+                     var {id,type,picUrl}= resultData;
+                     $("#productL_img_upload").append("<img src="+picUrl+">");
+                     $("#productL_img_upload").attr("productPictureId",id);
+                   }
+
+                 },error : function(e){ // 相当于java中catch语句块的用法
+                     alert("上传文件时出错，请联系管理员");
+                 }
+             });
+           };
+
+         //上传海报
+         function bannerAjax(param){
+            //  drawTempPhoto($("#productL_banner_upload"))
+             var fileName = $("#"+param).val().substring($("#"+param).val().lastIndexOf("\\")+1);
+             var fileType=fileName.substring(fileName.lastIndexOf(".")+1);
+             if(fileType!="jpg"&&fileType!="png"&&fileType!="gif"&&fileType!="jpeg"&&fileType!="JPEG"&&fileType!="JPG"){
+               alertOnline("请上传图片jpg、jpeg、png、gif文件");
+               return;
+             }
+             var pictureType = '3';
+             $.ajaxFileUpload({
+                  url : ""+url+"wangjian/api/productType/pictureUpload",//服务器地址
+                  data: { pictureType: pictureType},
+                  secureuri: false,
+                  fileElementId:param,
+                  type:'POST',
+                  success : function(data){ //try语句块
+                  var oText =   $(data).find("pre").text();
+
+                  var newJson = JSON.parse(oText);
+                  var {resultCode,resultData} =newJson;
+                  if(resultCode==0){
+                    //图片id 图片分类 图片路径
+                    var {id,type,picUrl}= resultData;
+                    $("#productL_banner_upload").append("<img src="+picUrl+">");
+                    $("#productL_banner_upload").attr("billId",id);
+                  }
+
+
+                  },error : function(e){ // 相当于java中catch语句块的用法
+                      alert("上传文件时出错，请联系管理员");
+                  }
+              });
+
+            };
+
+
+            function toParams(){
+              window.location.href="productSpec.html";
+            }
     </script>
 </html>

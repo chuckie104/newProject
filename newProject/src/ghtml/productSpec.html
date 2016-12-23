@@ -84,7 +84,7 @@
               <div class="productList_content clearfix">
                     <div class="productList_content_aside fl">
                         <ul class="clearfix">
-                            <li>
+                            <li onclick="toList()">
                                 <div class="productList_aside_logo fl">
 
                                 </div>
@@ -232,5 +232,9 @@
           $(function(){
             productSpec();
           })
+
+          function toList(){
+            window.location.href="productList.html";
+          }
     </script>
 </html>
