@@ -2140,3 +2140,158 @@ $mainRed:#c83333;
   top: 2px;
   right: 4px;
 }
+
+
+.productGList_content{
+  background-color: #fff;
+  width: 730px;
+  height: 650px;
+  margin-left: 44px;
+
+}
+
+.productG_content_bot_Wrap{
+    padding-top: 18px;
+  width: 705px;
+  margin: 0 auto;
+}
+
+.productG_content_bot_selectTypeBox{
+  .productG_content_bot_selectTypeBox_Text{
+    width: 62px;
+    height: 30px;
+    border: 1px solid #4790bb;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .productG_content_bot_selectTypeBox_circleBox{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #4790bb;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    cursor: pointer;
+  }
+
+  .productG_content_bot_selectTypeBox_cicle{
+    width: 0px;
+    height: 0px;
+    border: 8px solid #4790bb;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin: 12px auto;
+  }
+}
+
+.productG_content_bot_threeBtn div{
+  width: 56px;
+  height: 30px;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.productG_content_bot_threeBtn_Active{
+  border: 1px solid #4790bb !important;
+}
+
+.productGList_table{
+  border-top: 2px solid #ddd;
+  margin-top: 14px;
+}
+.productGList_table_tdBox{
+width: 703px;
+border: 1px solid #ddd;
+margin-top: 10px;
+background-color: #fcfcfc;
+
+section{
+  border-right: 1px solid #ddd;
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+
+}
+section:last-child{
+  border-right: none;
+}
+}
+
+.productGList_table_ListBox{
+  width: 703px;
+  border: 1px solid #ddd;
+  border-top: 0px;
+  background-color: #fcfcfc;
+  height: 90px;
+}
+
+.productGList_table_ListBox{
+  li{
+    height: 90px;
+    border-right: 1px solid #ddd;
+    float: left;
+    line-height: 90px;
+    text-align: center;
+
+    div{
+      height: 29px;
+      text-align: center;
+      line-height: 29px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    div:last-child{
+      border-bottom:none;
+    }
+  }
+  li:last-child{
+    border-right: none;
+  }
+
+}
+
+.productGList_table_selectLogo{
+  width: 22px;
+  height: 22px;
+  background:url("../images/pgl_logo.png") no-repeat;
+}
+
+.productGList_delBox_logo{
+  width: 12px;
+  height: 14px !important;
+  background:url("../images/del.png") no-repeat;
+  margin-top: 6px;
+  margin-right: 6px;
+  margin-left: 20px;
+}
+
+.productGList_editBox_logo{
+  width: 12px;
+  height: 14px !important;
+  background:url("../images/pen.png") no-repeat;
+  margin-top: 9px;
+  margin-right: 6px;
+  margin-left: 20px;
+}
+
+.productGList_xiaBox_logo{
+  width: 14px;
+  height: 14px !important;
+  background:url("../images/xia_07.png") no-repeat;
+  margin-top: 7px;
+  margin-right: 6px;
+  margin-left: 20px;
+}
+
+.productGList_table_image{
+  width: 42px;
+  height: 36px;
+  margin: 28px auto;
+}
