@@ -1,0 +1,467 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+html	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^<html>$/;"	function	line:2
+head	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^  <head>$/;"	function	line:3
+meta	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <meta charset="utf-8">$/;"	function	line:4
+title	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <title>店铺首页<\/title>$/;"	function	line:5
+link	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <link rel="stylesheet" href="..\/gcss\/style.css">$/;"	function	line:6
+link	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <link rel="stylesheet" href="..\/gcss\/base.css">$/;"	function	line:7
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <script type="text\/javascript" src="http:\/\/api.map.baidu.com\/api?v=2.0&ak=7GAxnzcDaWjbiLx19K3Hge1OKBuK5alo"><\/script>$/;"	function	line:8
+style	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^  <style media="screen">$/;"	function	line:10
+body	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^  <body>$/;"	function	line:25
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^        <div id="storeHome">$/;"	function	line:26
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^            <div class="homePage_header">$/;"	function	line:27
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="homePage_logo">$/;"	function	line:28
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="contentWrap">$/;"	function	line:31
+ul	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <ul class="clearfix homePage_header_list">$/;"	function	line:32
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li >站点页面<\/li>$/;"	function	line:33
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li class="header_tab_active">线上分店<\/li>$/;"	function	line:34
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li>产品库<\/li>$/;"	function	line:35
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li>生成app<\/li>$/;"	function	line:36
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="createD">$/;"	function	line:39
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="createL">$/;"	function	line:42
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^              <div class="productG_content_wrapall clearfix">$/;"	function	line:46
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                <section class="storeHome_aside fl">$/;"	function	line:47
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                  <div class="storeHome_aside_wrap">$/;"	function	line:48
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="storeHome_aside_title">$/;"	function	line:49
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="storeHome_aside_img fl">$/;"	function	line:50
+img	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <img src="..\/images\/shopICON.png"  \/>$/;"	function	line:51
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="storeHome_aside_text fl">$/;"	function	line:53
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <div class="storeHome_aside_list">$/;"	function	line:57
+ul	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <ul class="clearfix">$/;"	function	line:58
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <li >$/;"	function	line:59
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="storeHome_aside_list_logo1  fl">$/;"	function	line:60
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="storeHome_aside_list_Text fl">$/;"	function	line:63
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <li>$/;"	function	line:67
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_logo2 fl">$/;"	function	line:68
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_Text fl">$/;"	function	line:71
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <li>$/;"	function	line:75
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_logo3 fl">$/;"	function	line:76
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_Text fl">$/;"	function	line:79
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <li>$/;"	function	line:83
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_logo4 fl">$/;"	function	line:84
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_Text fl">$/;"	function	line:87
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <li class="storeHome_aside_listActive">$/;"	function	line:91
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_logo5 storeHome_aside_list_logo5_active fl">$/;"	function	line:92
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="storeHome_aside_list_Text fl">$/;"	function	line:95
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                <div class="storeHome_aside_box fl">$/;"	function	line:104
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                  <div class="storeHome_aside_box_top" style="height:50px;">$/;"	function	line:105
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="storeHome_aside_box_nav">$/;"	function	line:106
+ul	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <ul class="clearfix" id="storeRedecorated_list">$/;"	function	line:107
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li class="liActive_fff">$/;"	function	line:108
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:109
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li >$/;"	function	line:113
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:114
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li >$/;"	function	line:118
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:119
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li >$/;"	function	line:124
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:125
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li >$/;"	function	line:129
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:130
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <li >$/;"	function	line:134
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <p>$/;"	function	line:135
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                  <div class="storeRedecorated_bot" style="padding-top:10px;height:644px; ">$/;"	function	line:142
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index" style="display:none;">$/;"	function	line:144
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class="createStore_content" style="margin-left:20px;">$/;"	function	line:145
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_name clearfix">$/;"	function	line:146
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:147
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_import fl">$/;"	function	line:148
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:151
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_inputText fl" style="text-align:center;width:340px;" >$/;"	function	line:155
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_info clearfix">$/;"	function	line:159
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:160
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_noimport fl">$/;"	function	line:161
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:164
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_textarea fl" style="width:340px;">$/;"	function	line:168
+textarea	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <textarea name="name" placeholder="请输入您的店铺描述"><\/textarea>$/;"	function	line:169
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_city clearfix">$/;"	function	line:172
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:173
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_import fl">$/;"	function	line:174
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:177
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_content_threeWrap fl">$/;"	function	line:181
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_content_address fl">$/;"	function	line:182
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="productG_content_pro fl">$/;"	function	line:183
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="circle fr">$/;"	function	line:186
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_content_address  fl">$/;"	function	line:190
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="productG_content_city fl">$/;"	function	line:191
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="circle fr">$/;"	function	line:194
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_area clearfix">$/;"	function	line:201
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:202
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_noimport fl">$/;"	function	line:203
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:206
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_inputText fl" style="width:340px;">$/;"	function	line:210
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <input type="text" name="name" placeholder="请输入你的店铺地址">$/;"	function	line:211
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_map clearfix">$/;"	function	line:214
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:215
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_noimport fl">$/;"	function	line:216
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:219
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_btn fl" onclick="theLocation()">$/;"	function	line:223
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="mapText_info fl">$/;"	function	line:226
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="baidu_map" id="map">$/;"	function	line:230
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <script type="text\/javascript">$/;"	function	line:233
+theLocation	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              function theLocation(){$/;"	function	line:252
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_statue clearfix">$/;"	function	line:285
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="createStore_leftText fl">$/;"	function	line:286
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="createStore_noimport fl">$/;"	function	line:287
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="createStore_text fl">$/;"	function	line:290
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="store_radio fl">$/;"	function	line:294
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="radio_open fl">$/;"	function	line:295
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="radio_dot fl">$/;"	function	line:296
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="radio_text fl">$/;"	function	line:299
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="radio_open fl" style="margin-left:18px;">$/;"	function	line:303
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="radio_dot fl">$/;"	function	line:304
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="radio_text fl">$/;"	function	line:307
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="store_info clearfix">$/;"	function	line:313
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_leftText fl">$/;"	function	line:314
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_noimport fl">$/;"	function	line:315
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="createStore_text fl">$/;"	function	line:318
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_textarea fl" style="width:340px;">$/;"	function	line:322
+textarea	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <textarea name="name" placeholder="店铺公告"><\/textarea>$/;"	function	line:323
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="create_btn">$/;"	function	line:326
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index"style="display:none;">$/;"	function	line:331
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="storeSetup_pay">$/;"	function	line:332
+ul	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <ul class="clearfix">$/;"	function	line:333
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li>$/;"	function	line:334
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="storeSetup_pay_wrap">$/;"	function	line:335
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="storeSetup_pay_doublewrap">$/;"	function	line:336
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="payTop">$/;"	function	line:337
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                <div class="payTop_img">$/;"	function	line:338
+img	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                    <img src="..\/images\/pay_03.png" alt="">$/;"	function	line:339
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                <div class="payTop_text">$/;"	function	line:341
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="payMiddle">$/;"	function	line:345
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="productG_content_radio_box fl">$/;"	function	line:348
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                <div class="productG_content_radio_left fl">$/;"	function	line:349
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:350
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                    <div class="fl">$/;"	function	line:353
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:357
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                  <div class="productG_selectDot fl">$/;"	function	line:358
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                                  <div class="fl">$/;"	function	line:361
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li>$/;"	function	line:369
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="storeSetup_pay_wrap">$/;"	function	line:370
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="storeSetup_pay_doublewrap">$/;"	function	line:371
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payTop">$/;"	function	line:372
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <div class="payTop_img">$/;"	function	line:373
+img	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                              <img src="..\/images\/pay_05.png" alt="">$/;"	function	line:374
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <div class="payTop_text">$/;"	function	line:376
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payMiddle">$/;"	function	line:380
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payBtn clearfix">$/;"	function	line:383
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="editBtnPay fl">$/;"	function	line:384
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="delectBtnPay fr">$/;"	function	line:387
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="_blankTo">$/;"	function	line:391
+a	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <a href="#">如何开通支付宝企业账号<\/a>$/;"	function	line:392
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <li>$/;"	function	line:397
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="storeSetup_pay_wrap" style="border-right: 0px;">$/;"	function	line:398
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="storeSetup_pay_doublewrap">$/;"	function	line:399
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payTop">$/;"	function	line:400
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <div class="payTop_img">$/;"	function	line:401
+img	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                              <img src="..\/images\/pay_07.png" alt="">$/;"	function	line:402
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <div class="payTop_text">$/;"	function	line:404
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payMiddle">$/;"	function	line:408
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="payBtn clearfix">$/;"	function	line:411
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <div class="openBtnPay">$/;"	function	line:412
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="_blankTo">$/;"	function	line:417
+a	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <a href="#">如何开通微信企业账号<\/a>$/;"	function	line:418
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index" style="display:none;">$/;"	function	line:428
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix ">$/;"	function	line:429
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreLeftText fl">$/;"	function	line:430
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreRight fl">$/;"	function	line:433
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTop clearfix">$/;"	function	line:434
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl" style="margin-right:26px">等值使用 <\/p>$/;"	function	line:435
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:436
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <input type="text" name="" value="" id="scoreInput">$/;"	function	line:437
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scroedeng fl">$/;"	function	line:439
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTime">$/;"	function	line:443
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <p class="fl" style="margin-right:26px">时间限制 <\/p>$/;"	function	line:444
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <p class="fl"style="margin-right:6px">一日最多兑换<\/p>$/;"	function	line:445
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:446
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <input type="text" name="" value="" id="scoreInput">$/;"	function	line:447
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="scroedeng fl">$/;"	function	line:449
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " style="margin-top:20px;">$/;"	function	line:455
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreLeftText fl">$/;"	function	line:456
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:459
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix"style="margin-left: 0px;">$/;"	function	line:460
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:461
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:462
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:465
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:469
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:470
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:473
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTop clearfix">$/;"	function	line:478
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl" style="margin-right:26px">等值获取 <\/p>$/;"	function	line:479
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl"style="margin-right:6px">一元的消费=获得<\/p>$/;"	function	line:480
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:481
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <input type="text" name="" value="" id="scoreInput2">$/;"	function	line:482
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scroedeng fl">$/;"	function	line:484
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTime">$/;"	function	line:488
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <p class="fl" style="margin-right:26px">时间限制 <\/p>$/;"	function	line:489
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <p class="fl"style="margin-right:6px">一日最多获得<\/p>$/;"	function	line:490
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:491
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <input type="text" name="" value="" id="scoreInput3">$/;"	function	line:492
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="scroedeng fl">$/;"	function	line:494
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index" style="display:none;">$/;"	function	line:501
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:502
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreLeftText fl">$/;"	function	line:503
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:506
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:507
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:508
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:509
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:512
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:516
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:517
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:520
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTop clearfix">$/;"	function	line:525
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl"style="margin-right:6px">满足<\/p>$/;"	function	line:527
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:528
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <input type="text" name="" value="" id="scoreInput4">$/;"	function	line:529
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scroedeng fl">$/;"	function	line:531
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " style="margin-top:20px;">$/;"	function	line:538
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreLeftText fl">$/;"	function	line:539
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:542
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:543
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:544
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:545
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:548
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:552
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:553
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:556
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="scoreTop clearfix">$/;"	function	line:561
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl"style="margin-right:6px">满足<\/p>$/;"	function	line:563
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:564
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <input type="text" name="" value="" id="scoreInput5">$/;"	function	line:565
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scroedeng fl">$/;"	function	line:567
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <p class="fl"style="margin-right:6px">立减<\/p>$/;"	function	line:570
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scoreInputBox fl" style="margin-right:6px">$/;"	function	line:571
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <input type="text" name="" value="" id="scoreInput5">$/;"	function	line:572
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="scroedeng fl"style="margin-right:6px">$/;"	function	line:574
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:578
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="addScore" >$/;"	function	line:582
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <span style="font-size:24px;display:inline-block;vertical-align:top;margin-right:10px;">+ <\/span><i style="display:inline-block;vertical-align:top;font-size:14px;">添加字段<\/i>$/;"	function	line:583
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index" style="display:none;">$/;"	function	line:588
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:589
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:590
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:593
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:594
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:595
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:596
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:599
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:603
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:604
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:607
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:614
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:615
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:618
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:619
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:620
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:621
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:624
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:628
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:629
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:632
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:639
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:640
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:643
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:644
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:645
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:646
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:649
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:653
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:654
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:657
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:664
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:665
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:668
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:669
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:670
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:671
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:674
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:678
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:679
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:682
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:689
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:690
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="scoreRight fl">$/;"	function	line:693
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">$/;"	function	line:694
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_left fl">$/;"	function	line:695
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_selectDot  radio_dotActive fl">$/;"	function	line:696
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:699
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="productG_content_radio_right fl" style="margin-left:40px;">$/;"	function	line:703
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="productG_selectDot fl">$/;"	function	line:704
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="fl">$/;"	function	line:707
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="fl gj_info_scroe">$/;"	function	line:711
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class=" clearfix " >$/;"	function	line:717
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="buyerInfo fl">$/;"	function	line:718
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                        <div class="scoreRight fl">$/;"	function	line:721
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl wordBox">$/;"	function	line:722
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl wrodSelect">$/;"	function	line:725
+p	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <p class="fl">文本<\/p>$/;"	function	line:726
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="circle fr" style="margin-top:13px;" >$/;"	function	line:727
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class="addScore" style="margin-left:120px;">$/;"	function	line:733
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <span style="font-size:24px;display:inline-block;vertical-align:top;margin-right:10px;">+ <\/span><i style="display:inline-block;vertical-align:top;font-size:14px;">添加字段<\/i>$/;"	function	line:734
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <div class="create_btn">$/;"	function	line:736
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <section class="storeSetup_index" style="display:black">$/;"	function	line:740
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="clearfix">$/;"	function	line:741
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="fl storeSetup_temp_left">$/;"	function	line:742
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="createStore_import ">$/;"	function	line:743
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="createStore_text ">$/;"	function	line:746
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="fl storeInputBox">$/;"	function	line:750
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <input type="text" name="" value="">$/;"	function	line:751
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="clearfix " style="margin-top:10px;">$/;"	function	line:755
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="store_city clearfix">$/;"	function	line:756
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="fl storeSetup_temp_left">$/;"	function	line:757
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_import ">$/;"	function	line:758
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <div class="createStore_text ">$/;"	function	line:761
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="productG_content_threeWrap fl">$/;"	function	line:765
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="productG_content_address fl">$/;"	function	line:766
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="productG_content_pro fl">$/;"	function	line:767
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="circle fr" id="provinceCircle">$/;"	function	line:770
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="city_select_box" id="provinceBox">$/;"	function	line:773
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="productG_content_address  fl">$/;"	function	line:779
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="productG_content_city fl">$/;"	function	line:780
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="circle fr" id="cityCircle">$/;"	function	line:783
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="city_select_box" id="cityBox">$/;"	function	line:786
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <div class="productG_content_address  fl">$/;"	function	line:790
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="productG_content_area fl">$/;"	function	line:791
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="circle fr" id="areaCircle">$/;"	function	line:794
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <div class="city_select_box" id="areaBox">$/;"	function	line:797
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="clearfix">$/;"	function	line:806
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="clearfix">$/;"	function	line:810
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl storeSetup_temp_left">$/;"	function	line:811
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="createStore_import ">$/;"	function	line:812
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="createStore_text ">$/;"	function	line:815
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl ">$/;"	function	line:819
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="selectType_logo fl">$/;"	function	line:820
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="fl" style="line-height:30px;">$/;"	function	line:823
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="clearfix" style="margin-top:10px;">$/;"	function	line:829
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl storeSetup_temp_left">$/;"	function	line:830
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                            <div class="fl setUpTable">$/;"	function	line:833
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="setUpTableNav clearfix">$/;"	function	line:834
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section >$/;"	function	line:835
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableNavActive">$/;"	function	line:838
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="setUpTableTh clearfix">$/;"	function	line:842
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThOne">$/;"	function	line:843
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:846
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:849
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:852
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:855
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThThree">$/;"	function	line:858
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="setUpTableTd_kg">$/;"	function	line:862
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="setUpTableTd_kgWrap clearfix">$/;"	function	line:863
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThOne">$/;"	function	line:864
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:867
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <input type="text" name="" value="">$/;"	function	line:868
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:870
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                            <input type="text" name="" value="">$/;"	function	line:871
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:873
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <input type="text" name="" value="">$/;"	function	line:874
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThTwo">$/;"	function	line:876
+input	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <input type="text" name="" value="">$/;"	function	line:877
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                      <section class="setUpTableThThree">$/;"	function	line:879
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <span>编辑<\/span>$/;"	function	line:880
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                          <span>删除<\/span>$/;"	function	line:881
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="addTableBtn">$/;"	function	line:884
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                        <span style="font-size:20px">+<\/span>为指定区域设置邮费$/;"	function	line:885
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                <div class="setUpTableTd_num">$/;"	function	line:888
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <div class="create_btn">$/;"	function	line:896
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^        <div class="alert" id="carryCostSet">$/;"	function	line:904
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^            <section class="carryCostSetWrap">$/;"	function	line:905
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                <div class="carryCostSetWrapTop">$/;"	function	line:906
+span	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <span>为指定区域设置运费<\/span>$/;"	function	line:907
+i	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <i class="colorchange">(提示: 红色文字表示在其他指定低于有勾选, 再次勾选会更新之前省份设置)<\/i>$/;"	function	line:908
+em	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                    <em style="text-align:right;">X<\/em>$/;"	function	line:909
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                <div class="carryCostSetWrapContent">$/;"	function	line:911
+ul	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                      <ul class="clearfix">$/;"	function	line:912
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:913
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:914
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:917
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:918
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:919
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:922
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:926
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:927
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:930
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:934
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:935
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:938
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:945
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:946
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:949
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:950
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:951
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:954
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:958
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:959
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:962
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:966
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:967
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:970
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:976
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:977
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:980
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:981
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:982
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:985
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:989
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:990
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:993
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:999
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1000
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1003
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:1012
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:1013
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:1016
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1017
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1018
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1021
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1025
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1026
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1029
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1033
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1034
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1037
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1041
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1042
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1045
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:1052
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:1053
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:1056
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1057
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1058
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1061
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1065
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1066
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1069
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1073
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1074
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1077
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1081
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1082
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1085
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1089
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1090
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1093
+li	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                          <li >$/;"	function	line:1099
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostTitle fl">$/;"	function	line:1100
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                              <div class="carryCostClild fl">$/;"	function	line:1103
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1104
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1105
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1108
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1112
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1113
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1116
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1120
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1121
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1124
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1128
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1129
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1132
+section	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                  <section class="fl">$/;"	function	line:1136
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="selectType_logo fl" style="margin-top:2px;">$/;"	function	line:1137
+div	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^                                    <div class="fl">$/;"	function	line:1140
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <script type="text\/javascript" src="..\/gjs\/jquery.min.js">  <\/script>$/;"	function	line:1151
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <script type="text\/javascript" src="..\/gjs\/base.js">  <\/script>$/;"	function	line:1152
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <script type="text\/javascript" src="..\/gjs\/app.js">  <\/script>$/;"	function	line:1153
+script	/Users/gaojian/Desktop/project/newProject/src/ghtml/storeSetup.html	/^    <script type="text\/javascript">$/;"	function	line:1155

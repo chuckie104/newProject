@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="../gcss/base.css">
     <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7GAxnzcDaWjbiLx19K3Hge1OKBuK5alo"></script>
   </head>
+  <style media="screen">
+    html{
+      width: 100%;
+      height: 100%;
+    }
+
+    #carryCostSet{
+      left: 0px;
+      top: 0px;
+    }
+    .colorchange{
+      color: #a4a4a4;
+      margin-left: 4px;
+    }
+  </style>
   <body>
         <div id="storeHome">
             <div class="homePage_header">
@@ -41,8 +56,8 @@
                     </div>
                     <div class="storeHome_aside_list">
                           <ul class="clearfix">
-                            <li class="storeHome_aside_listActive">
-                                <div class="storeHome_aside_list_logo1 storeHome_aside_list_logo1_active fl">
+                            <li >
+                                <div class="storeHome_aside_list_logo1  fl">
 
                                 </div>
                                 <div class="storeHome_aside_list_Text fl">
@@ -73,8 +88,8 @@
                                   店铺装修
                               </div>
                             </li>
-                            <li>
-                              <div class="storeHome_aside_list_logo5 fl">
+                            <li class="storeHome_aside_listActive">
+                              <div class="storeHome_aside_list_logo5 storeHome_aside_list_logo5_active fl">
 
                               </div>
                               <div class="storeHome_aside_list_Text fl">
@@ -105,9 +120,15 @@
                                     积分设置
                                     </p>
                                 </li>
+
                                 <li >
                                     <p>
                                     营销设置
+                                    </p>
+                                </li>
+                                <li >
+                                    <p>
+                                    买家设置
                                     </p>
                                 </li>
                                 <li >
@@ -119,194 +140,1012 @@
                         </div>
                   </div>
                   <div class="storeRedecorated_bot" style="padding-top:10px;height:644px; ">
-                    <div class="createStore_content" style="margin-left:20px;">
-                          <div class="store_name clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_import fl">
 
-                                  </div>
-                                  <div class="createStore_text fl">
-                                      店铺名称
-                                  </div>
-                                </div>
-                                <div class="createStore_inputText fl" style="text-align:center;width:340px;" >
-                                      苏州分店
-                                </div>
-                          </div>
-                          <div class="store_info clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_noimport fl">
-
-                                  </div>
-                                  <div class="createStore_text fl">
-                                    店铺描述
-                                  </div>
-                                </div>
-                                <div class="createStore_textarea fl" style="width:340px;">
-                                      <textarea name="name" placeholder="请输入您的店铺描述"></textarea>
-                                </div>
-                          </div>
-                          <div class="store_city clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_import fl">
-
-                                  </div>
-                                  <div class="createStore_text fl">
-                                      所在城市
-                                  </div>
-                                </div>
-                                <div class="productG_content_threeWrap fl">
-                                  <div class="productG_content_address fl">
-                                    <div class="productG_content_pro fl">
-                                      省份
-                                    </div>
-                                    <div class="circle fr">
+                    <section class="storeSetup_index" style="display:none;">
+                      <div class="createStore_content" style="margin-left:20px;">
+                            <div class="store_name clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_import fl">
 
                                     </div>
-                                  </div>
-                                  <div class="productG_content_address  fl">
-                                    <div class="productG_content_city fl">
-                                      市
-                                    </div>
-                                    <div class="circle fr">
-
+                                    <div class="createStore_text fl">
+                                        店铺名称
                                     </div>
                                   </div>
+                                  <div class="createStore_inputText fl" style="text-align:center;width:340px;" >
+                                        苏州分店
+                                  </div>
+                            </div>
+                            <div class="store_info clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_noimport fl">
 
-                                </div>
-                          </div>
-                          <div class="store_area clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_noimport fl">
+                                    </div>
+                                    <div class="createStore_text fl">
+                                      店铺描述
+                                    </div>
+                                  </div>
+                                  <div class="createStore_textarea fl" style="width:340px;">
+                                        <textarea name="name" placeholder="请输入您的店铺描述"></textarea>
+                                  </div>
+                            </div>
+                            <div class="store_city clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_import fl">
+
+                                    </div>
+                                    <div class="createStore_text fl">
+                                        所在城市
+                                    </div>
+                                  </div>
+                                  <div class="productG_content_threeWrap fl">
+                                    <div class="productG_content_address fl">
+                                      <div class="productG_content_pro fl">
+                                        省份
+                                      </div>
+                                      <div class="circle fr">
+
+                                      </div>
+                                    </div>
+                                    <div class="productG_content_address  fl">
+                                      <div class="productG_content_city fl">
+                                        市
+                                      </div>
+                                      <div class="circle fr">
+
+                                      </div>
+                                    </div>
 
                                   </div>
-                                  <div class="createStore_text fl">
-                                      店铺地址
+                            </div>
+                            <div class="store_area clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_noimport fl">
+
+                                    </div>
+                                    <div class="createStore_text fl">
+                                        店铺地址
+                                    </div>
                                   </div>
-                                </div>
-                                <div class="createStore_inputText fl" style="width:340px;">
-                                      <input type="text" name="name" placeholder="请输入你的店铺地址">
-                                </div>
-                          </div>
-                          <div class="store_map clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_noimport fl">
-
+                                  <div class="createStore_inputText fl" style="width:340px;">
+                                        <input type="text" name="name" placeholder="请输入你的店铺地址">
                                   </div>
-                                  <div class="createStore_text fl">
-                                      店铺坐标
+                            </div>
+                            <div class="store_map clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_noimport fl">
+
+                                    </div>
+                                    <div class="createStore_text fl">
+                                        店铺坐标
+                                    </div>
                                   </div>
-                                </div>
-                                <div class="createStore_btn fl" onclick="theLocation()">
-                                      获取地图坐标
-                                </div>
-                                <div class="mapText_info fl">
-                                      (提示: 如定位有误, 请拖动图标到准确位置)
-                                </div>
-                          </div>
-                          <div class="baidu_map" id="map">
+                                  <div class="createStore_btn fl" onclick="theLocation()">
+                                        获取地图坐标
+                                  </div>
+                                  <div class="mapText_info fl">
+                                        (提示: 如定位有误, 请拖动图标到准确位置)
+                                  </div>
+                            </div>
+                            <div class="baidu_map" id="map">
 
-                          </div>
-                          <script type="text/javascript">
-                            var map = new BMap.Map("map");
-                            map.centerAndZoom(new BMap.Point(113.269973,23.125203),13);
-
-                            //点击获取经纬度
-                            map.addEventListener("click",function(e){
-
-                              map.clearOverlays();
-                              var json ={};
-                              json.lng =e.point.lng ;
-                              json.lat = e.point.lat;
-                              var mk = new BMap.Marker(json);
-                              // console.log(json);
-                              // sessionStorage.setItem("map",JSON.stringify(json));
-                              map.addOverlay(mk);
-                              map.panTo(mk);
-                              });
-
-                            // 用经纬度设置地图中心点
-                            function theLocation(){
+                            </div>
+                            <script type="text/javascript">
                               var map = new BMap.Map("map");
-                              var point = new BMap.Point(113.269973,23.125203);
-                              map.centerAndZoom(point,13);
+                              map.centerAndZoom(new BMap.Point(113.269973,23.125203),13);
 
-                              var geolocation = new BMap.Geolocation();
-                              geolocation.getCurrentPosition(function(r){
-                              if(this.getStatus() == BMAP_STATUS_SUCCESS){
-                                var mk = new BMap.Marker(r.point);
+                              //点击获取经纬度
+                              map.addEventListener("click",function(e){
+
+                                map.clearOverlays();
+                                var json ={};
+                                json.lng =e.point.lng ;
+                                json.lat = e.point.lat;
+                                var mk = new BMap.Marker(json);
+                                // console.log(json);
+                                // sessionStorage.setItem("map",JSON.stringify(json));
                                 map.addOverlay(mk);
-                                map.panTo(r.point);
-                                map.enableScrollWheelZoom(true);
-                                console.log(r.point);
-                                //点击获取经纬度
-                                map.addEventListener("click",function(e){
-                                  alert(e.point.lng + "," + e.point.lat);
-                                  map.clearOverlays();
-                                  var json ={};
-                                  removeMarker.bind(marker).bind(mk);
-                                  json.lng =e.point.lng ;
-                                  json.lat = e.point.lat;
-                                  var mk = new BMap.Marker(json);
-                                  sessionStorage.setItem("map",JSON.stringify(json));
+                                map.panTo(mk);
+                                });
+
+                              // 用经纬度设置地图中心点
+                              function theLocation(){
+                                var map = new BMap.Map("map");
+                                var point = new BMap.Point(113.269973,23.125203);
+                                map.centerAndZoom(point,13);
+
+                                var geolocation = new BMap.Geolocation();
+                                geolocation.getCurrentPosition(function(r){
+                                if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                                  var mk = new BMap.Marker(r.point);
                                   map.addOverlay(mk);
-                                  map.panTo(json);
-                                  });
+                                  map.panTo(r.point);
+                                  map.enableScrollWheelZoom(true);
+                                  console.log(r.point);
+                                  //点击获取经纬度
+                                  map.addEventListener("click",function(e){
+                                    alert(e.point.lng + "," + e.point.lat);
+                                    map.clearOverlays();
+                                    var json ={};
+                                    removeMarker.bind(marker).bind(mk);
+                                    json.lng =e.point.lng ;
+                                    json.lat = e.point.lat;
+                                    var mk = new BMap.Marker(json);
+                                    sessionStorage.setItem("map",JSON.stringify(json));
+                                    map.addOverlay(mk);
+                                    map.panTo(json);
+                                    });
+                                }
+                                else {
+                                  alert('failed'+this.getStatus());
+                                }
+                                },{enableHighAccuracy: true})
                               }
-                              else {
-                                alert('failed'+this.getStatus());
-                              }
-                              },{enableHighAccuracy: true})
-                            }
-                          </script>
-                          <div class="store_statue clearfix">
-                            <div class="createStore_leftText fl">
-                              <div class="createStore_noimport fl">
+                            </script>
+                            <div class="store_statue clearfix">
+                              <div class="createStore_leftText fl">
+                                <div class="createStore_noimport fl">
 
+                                </div>
+                                <div class="createStore_text fl">
+                                    店铺状态
+                                </div>
                               </div>
-                              <div class="createStore_text fl">
-                                  店铺状态
+                              <div class="store_radio fl">
+                                  <div class="radio_open fl">
+                                        <div class="radio_dot fl">
+
+                                        </div>
+                                        <div class="radio_text fl">
+                                            开启
+                                        </div>
+                                  </div>
+                                  <div class="radio_open fl" style="margin-left:18px;">
+                                        <div class="radio_dot fl">
+
+                                        </div>
+                                        <div class="radio_text fl">
+                                            关闭
+                                        </div>
+                                  </div>
                               </div>
                             </div>
-                            <div class="store_radio fl">
-                                <div class="radio_open fl">
-                                      <div class="radio_dot fl">
+                            <div class="store_info clearfix">
+                                  <div class="createStore_leftText fl">
+                                    <div class="createStore_noimport fl">
+
+                                    </div>
+                                    <div class="createStore_text fl">
+                                      店铺公告
+                                    </div>
+                                  </div>
+                                  <div class="createStore_textarea fl" style="width:340px;">
+                                        <textarea name="name" placeholder="店铺公告"></textarea>
+                                  </div>
+                            </div>
+                            <div class="create_btn">
+                                保存
+                            </div>
+                      </div>
+                    </section>
+                    <section class="storeSetup_index"style="display:none;">
+                        <div class="storeSetup_pay">
+                            <ul class="clearfix">
+                              <li>
+                                  <div class="storeSetup_pay_wrap">
+                                        <div class="storeSetup_pay_doublewrap">
+                                            <div class="payTop">
+                                                <div class="payTop_img">
+                                                    <img src="../images/pay_03.png" alt="">
+                                                </div>
+                                                <div class="payTop_text">
+                                                    货到付款/线下支付
+                                                </div>
+                                            </div>
+                                            <div class="payMiddle">
+                                                买家收到您的商品后,进行当面付款,或线下协商支付
+                                            </div>
+                                            <div class="productG_content_radio_box fl">
+                                                <div class="productG_content_radio_left fl">
+                                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                                    </div>
+                                                    <div class="fl">
+                                                        开启
+                                                    </div>
+                                                </div>
+                                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                                  <div class="productG_selectDot fl">
+
+                                                  </div>
+                                                  <div class="fl">
+                                                      关闭
+                                                  </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="storeSetup_pay_wrap">
+                                      <div class="storeSetup_pay_doublewrap">
+                                        <div class="payTop">
+                                          <div class="payTop_img">
+                                              <img src="../images/pay_05.png" alt="">
+                                          </div>
+                                          <div class="payTop_text">
+                                              支付宝
+                                          </div>
+                                        </div>
+                                        <div class="payMiddle">
+                                            绑定支付宝企业账号, 买家直接支付到该账号。
+                                        </div>
+                                        <div class="payBtn clearfix">
+                                            <div class="editBtnPay fl">
+                                                修改
+                                            </div>
+                                            <div class="delectBtnPay fr">
+                                                关闭
+                                            </div>
+                                        </div>
+                                        <div class="_blankTo">
+                                            <a href="#">如何开通支付宝企业账号</a>
+                                        </div>
+                                      </div>
+                                  </div>
+                              </li>
+                              <li>
+                                  <div class="storeSetup_pay_wrap" style="border-right: 0px;">
+                                      <div class="storeSetup_pay_doublewrap">
+                                        <div class="payTop">
+                                          <div class="payTop_img">
+                                              <img src="../images/pay_07.png" alt="">
+                                          </div>
+                                          <div class="payTop_text">
+                                              微信支付
+                                          </div>
+                                        </div>
+                                        <div class="payMiddle">
+                                            绑定微信企业账号, 买家直接支付到该账号。
+                                        </div>
+                                        <div class="payBtn clearfix">
+                                            <div class="openBtnPay">
+                                                开通微信支付
+                                            </div>
+
+                                        </div>
+                                        <div class="_blankTo">
+                                            <a href="#">如何开通微信企业账号</a>
+                                        </div>
 
                                       </div>
-                                      <div class="radio_text fl">
-                                          开启
-                                      </div>
+                                  </div>
+                              </li>
+
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="storeSetup_index" style="display:none;">
+                      <div class=" clearfix ">
+                        <div class="scoreLeftText fl">
+                            积分使用
+                        </div>
+                        <div class="scoreRight fl">
+                            <div class="scoreTop clearfix">
+                                  <p class="fl" style="margin-right:26px">等值使用 </p>
+                                  <div class="scoreInputBox fl" style="margin-right:6px">
+                                      <input type="text" name="" value="" id="scoreInput">
+                                  </div>
+                                  <div class="scroedeng fl">
+                                      积分 = 1元
+                                  </div>
+                            </div>
+                            <div class="scoreTime">
+                              <p class="fl" style="margin-right:26px">时间限制 </p>
+                              <p class="fl"style="margin-right:6px">一日最多兑换</p>
+                              <div class="scoreInputBox fl" style="margin-right:6px">
+                                  <input type="text" name="" value="" id="scoreInput">
+                              </div>
+                              <div class="scroedeng fl">
+                                  积分 = 1元
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " style="margin-top:20px;">
+                        <div class="scoreLeftText fl">
+                            积分获取
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix"style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        关闭
+                                    </div>
                                 </div>
-                                <div class="radio_open fl" style="margin-left:18px;">
-                                      <div class="radio_dot fl">
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
 
+                                  </div>
+                                  <div class="fl">
+                                      隐藏
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="scoreTop clearfix">
+                                  <p class="fl" style="margin-right:26px">等值获取 </p>
+                                  <p class="fl"style="margin-right:6px">一元的消费=获得</p>
+                                  <div class="scoreInputBox fl" style="margin-right:6px">
+                                      <input type="text" name="" value="" id="scoreInput2">
+                                  </div>
+                                  <div class="scroedeng fl">
+                                      积分 = 1元
+                                  </div>
+                            </div>
+                            <div class="scoreTime">
+                              <p class="fl" style="margin-right:26px">时间限制 </p>
+                              <p class="fl"style="margin-right:6px">一日最多获得</p>
+                              <div class="scoreInputBox fl" style="margin-right:6px">
+                                  <input type="text" name="" value="" id="scoreInput3">
+                              </div>
+                              <div class="scroedeng fl">
+                                  积分 = 1元
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="storeSetup_index" style="display:none;">
+                      <div class=" clearfix " >
+                        <div class="scoreLeftText fl">
+                            包邮
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                      隐藏
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="scoreTop clearfix">
+                                  <!-- <p class="fl" style="margin-right:26px">等值获取 </p> -->
+                                  <p class="fl"style="margin-right:6px">满足</p>
+                                  <div class="scoreInputBox fl" style="margin-right:6px">
+                                      <input type="text" name="" value="" id="scoreInput4">
+                                  </div>
+                                  <div class="scroedeng fl">
+                                      包邮
+                                  </div>
+                            </div>
+
+                        </div>
+                      </div>
+                      <div class=" clearfix " style="margin-top:20px;">
+                        <div class="scoreLeftText fl">
+                            积分获取
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                      隐藏
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="scoreTop clearfix">
+                                  <!-- <p class="fl" style="margin-right:26px">等值获取 </p> -->
+                                  <p class="fl"style="margin-right:6px">满足</p>
+                                  <div class="scoreInputBox fl" style="margin-right:6px">
+                                      <input type="text" name="" value="" id="scoreInput5">
+                                  </div>
+                                  <div class="scroedeng fl">
+                                      元,
+                                  </div>
+                                  <p class="fl"style="margin-right:6px">立减</p>
+                                  <div class="scoreInputBox fl" style="margin-right:6px">
+                                      <input type="text" name="" value="" id="scoreInput5">
+                                  </div>
+                                  <div class="scroedeng fl"style="margin-right:6px">
+                                      元
+                                  </div>
+
+                                  <div class="fl">
+                                    删除
+                                  </div>
+                            </div>
+                            <div class="addScore" >
+                                <span style="font-size:24px;display:inline-block;vertical-align:top;margin-right:10px;">+ </span><i style="display:inline-block;vertical-align:top;font-size:14px;">添加字段</i>
+                            </div>
+                        </div>
+                      </div>
+                    </section>
+                    <section class="storeSetup_index" style="display:none;">
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                            收货人地址填写
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                      关闭
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                            开具发票
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                      关闭
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                            付款人姓名填写
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                    关闭
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                            付款人号码填写
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                    关闭
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                            送达日期与时间
+                        </div>
+                          <div class="scoreRight fl">
+                            <div class="productG_content_radio_box clearfix" style="margin-left: 0px;">
+                                <div class="productG_content_radio_left fl">
+                                    <div class="productG_selectDot  radio_dotActive fl">
+
+                                    </div>
+                                    <div class="fl">
+                                        开启
+                                    </div>
+                                </div>
+                                <div class="productG_content_radio_right fl" style="margin-left:40px;">
+                                  <div class="productG_selectDot fl">
+
+                                  </div>
+                                  <div class="fl">
+                                    关闭
+                                  </div>
+                                </div>
+                                <div class="fl gj_info_scroe">
+                                  (提示: 开启后买家可以选择相应的一段时间的某一天作为送达日期)
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class=" clearfix " >
+                        <div class="buyerInfo fl">
+                          自定义留言
+                        </div>
+                        <div class="scoreRight fl">
+                            <div class="fl wordBox">
+                                  微信号
+                            </div>
+                            <div class="fl wrodSelect">
+                                <p class="fl">文本</p>
+                                <div class="circle fr" style="margin-top:13px;" >
+                                </div>
+                            </div>
+                        </div>
+
+                      </div>
+                      <div class="addScore" style="margin-left:120px;">
+                          <span style="font-size:24px;display:inline-block;vertical-align:top;margin-right:10px;">+ </span><i style="display:inline-block;vertical-align:top;font-size:14px;">添加字段</i>
+                      </div>
+                      <div class="create_btn">
+                          保存
+                      </div>
+                    </section>
+                    <section class="storeSetup_index" style="display:black">
+                          <div class="clearfix">
+                              <div class="fl storeSetup_temp_left">
+                                <div class="createStore_import ">
+
+                                </div>
+                                <div class="createStore_text ">
+                                    模版名称
+                                </div>
+                              </div>
+                              <div class="fl storeInputBox">
+                                  <input type="text" name="" value="">
+                              </div>
+                          </div>
+
+                          <div class="clearfix " style="margin-top:10px;">
+                              <div class="store_city clearfix">
+                                <div class="fl storeSetup_temp_left">
+                                  <div class="createStore_import ">
+
+                                  </div>
+                                  <div class="createStore_text ">
+                                  发货地
+                                  </div>
+                                </div>
+                                    <div class="productG_content_threeWrap fl">
+                                      <div class="productG_content_address fl">
+                                        <div class="productG_content_pro fl">
+                                          省
+                                        </div>
+                                        <div class="circle fr" id="provinceCircle">
+
+                                        </div>
+                                        <div class="city_select_box" id="provinceBox">
+                                            <!-- <section>
+                                              广东
+                                            </section> -->
+                                        </div>
                                       </div>
-                                      <div class="radio_text fl">
-                                          关闭
+                                      <div class="productG_content_address  fl">
+                                        <div class="productG_content_city fl">
+                                          市
+                                        </div>
+                                        <div class="circle fr" id="cityCircle">
+
+                                        </div>
+                                        <div class="city_select_box" id="cityBox">
+
+                                        </div>
                                       </div>
+                                      <div class="productG_content_address  fl">
+                                        <div class="productG_content_area fl">
+                                          区
+                                        </div>
+                                        <div class="circle fr" id="areaCircle">
+
+                                        </div>
+                                        <div class="city_select_box" id="areaBox">
+
+                                        </div>
+                                      </div>
+
+                                    </div>
+                              </div>
+                            </div>
+
+                            <div class="clearfix">
+
+                            </div>
+
+                          <div class="clearfix">
+                            <div class="fl storeSetup_temp_left">
+                              <div class="createStore_import ">
+
+                              </div>
+                              <div class="createStore_text ">
+                              运送方式
+                              </div>
+                            </div>
+                            <div class="fl ">
+                                <div class="selectType_logo fl">
+
+                                </div>
+                                <div class="fl" style="line-height:30px;">
+                                    快递
                                 </div>
                             </div>
                           </div>
-                          <div class="store_info clearfix">
-                                <div class="createStore_leftText fl">
-                                  <div class="createStore_noimport fl">
 
-                                  </div>
-                                  <div class="createStore_text fl">
-                                    店铺公告
-                                  </div>
+                          <div class="clearfix" style="margin-top:10px;">
+                            <div class="fl storeSetup_temp_left">
+
+                            </div>
+                            <div class="fl setUpTable">
+                                <div class="setUpTableNav clearfix">
+                                      <section >
+                                          按件计价
+                                      </section>
+                                      <section class="setUpTableNavActive">
+                                          按重量计价
+                                      </section>
                                 </div>
-                                <div class="createStore_textarea fl" style="width:340px;">
-                                      <textarea name="name" placeholder="店铺公告"></textarea>
+                                <div class="setUpTableTh clearfix">
+                                      <section class="setUpTableThOne">
+                                          运送到
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                        首件(公斤)
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                        运费(元)
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                        续件(公斤)
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                        续费(元)
+                                      </section>
+                                      <section class="setUpTableThThree">
+                                        操作
+                                      </section >
                                 </div>
+                                <div class="setUpTableTd_kg">
+                                    <div class="setUpTableTd_kgWrap clearfix">
+                                      <section class="setUpTableThOne">
+                                            广东省，深圳市，南山区
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                            <input type="text" name="" value="">
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                            <input type="text" name="" value="">
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                          <input type="text" name="" value="">
+                                      </section>
+                                      <section class="setUpTableThTwo">
+                                          <input type="text" name="" value="">
+                                      </section>
+                                      <section class="setUpTableThThree">
+                                          <span>编辑</span>
+                                          <span>删除</span>
+                                      </section >
+                                    </div>
+                                    <div class="addTableBtn">
+                                        <span style="font-size:20px">+</span>为指定区域设置邮费
+                                    </div>
+                                </div>
+                                <div class="setUpTableTd_num">
+
+                                </div>
+                            </div>
+
+
                           </div>
+
                           <div class="create_btn">
-                              保存
+                              确定
                           </div>
-                    </div>
+                    </section>
                   </div>
                 </div>
               </div>
+        </div>
+        <div class="alert" id="carryCostSet">
+            <section class="carryCostSetWrap">
+                <div class="carryCostSetWrapTop">
+                    <span>为指定区域设置运费</span>
+                    <i class="colorchange">(提示: 红色文字表示在其他指定低于有勾选, 再次勾选会更新之前省份设置)</i>
+                    <em style="text-align:right;">X</em>
+                </div>
+                <div class="carryCostSetWrapContent">
+                      <ul class="clearfix">
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    江浙沪
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        上海
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        浙江省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        江苏省
+                                    </div>
+                                  </section>
+                              </div>
+
+                          </li>
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    华东
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        福建省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        安徽省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        山东省
+                                    </div>
+                                  </section>
+                              </div>
+                          </li>
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    华南
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        广东省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        广西省
+                                    </div>
+                                  </section>
+
+
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        海南省
+                                    </div>
+                                </section>
+                              </div>
+
+
+
+                          </li>
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    华中
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                      湖北省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        湖南省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                    江西省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                      河南省
+                                    </div>
+                                  </section>
+                              </div>
+
+                          </li>
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    华北
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        北京
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        天津
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        河北省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        山西省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        内蒙古
+                                    </div>
+                                  </section>
+                              </div>
+                          </li>
+                          <li >
+                              <div class="carryCostTitle fl">
+                                    华北
+                              </div>
+                              <div class="carryCostClild fl">
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        北京
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        天津
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        河北省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        山西省
+                                    </div>
+                                  </section>
+                                  <section class="fl">
+                                    <div class="selectType_logo fl" style="margin-top:2px;">
+
+                                    </div>
+                                    <div class="fl">
+                                        内蒙古
+                                    </div>
+                                  </section>
+                              </div>
+                          </li>
+                      </ul>
+                </div>
+            </section>
         </div>
   </body>
     <script type="text/javascript" src="../gjs/jquery.min.js">  </script>
@@ -315,7 +1154,11 @@
 
     <script type="text/javascript">
           $(function(){
-
+                storeSetuo();
           })
+          for(var i =0;i<$(".content_li").length;i++){
+            $(".content_li").eq(i).css("background","url(img/logo"+i+".png)");
+          }
+
     </script>
 </html>

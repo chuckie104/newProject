@@ -16,10 +16,15 @@ function productClassfix(){
     productClassfixAjax();
   });
 
+
+
   function productClassfixAjax() {
-    ajax(""+url+"wangjian/api/productType/listProduct","post",{merchantId:"44"})
+    var json = {};
+    json.merchantId="44";
+    ajax(""+url+"wangjian/api/productType/listProduct","post",json)
     .then((data)=>{
         // console.log(JSON.stringify(data));
+        //调用获取list回调
         pushList(data);
     })
   }
@@ -176,32 +181,39 @@ function productClassfix(){
                       <div class="fl" style="margin-left:4px">
                           <input type="text" name="name" class="productC_child_WType" >
                       </div>
-                      <div class="productC_contentf_LOGO fl">
+                      <div class="productC_contentf_LOGO fl" style="cursor:pointer;">
 
                       </div>
-                      <div class="fr" style="font-size:16px;margin-right:6px;">
+                      <div class=" product_Delect_childParame" >
                           x
                       </div>
                     </div>`;
     $(this).parent(".productC_content_table4").prepend(_addBtn);
   });
   //确定添加子分类
-  $(document).delegate('.productC_contentf_LOGO', 'click', function(event) {
+  $(document).delegate('.productC_child_WType', 'change', function(event) {
     //客户输入的商品名字
     var typeName = $(this).parent().find(".productC_child_WType").val();
     var parentId =$(this).parents("ul").attr("id");
     // console.log(typeName);
     // console.log(parentId);
     // return;
-    ajax(""+url+"wangjian/api/productType/addProduct","post",{merchantId:"44",typeName:typeName,parentId:parentId})
-    .then((data)=>{
-      // console.log(JSON.stringify(data));
-      var {resultCode,resultMessage,resultData} =data;
-      if(resultCode==0){
-        alert("新增子分类成功");
-         $(this).parent().find(".productC_child_WType").attr("readonly","readonly");
+    //非空判断
+    if($(this).parent().attr("data")==undefined){
+      if($.trim(typeName)!==null||$.trim(typeName)!=""){
+        ajax(""+url+"wangjian/api/productType/addProduct","post",{merchantId:"44",typeName:typeName,parentId:parentId})
+        .then((data)=>{
+          // console.log(JSON.stringify(data));
+          var {resultCode,resultMessage,resultData} =data;
+          if(resultCode==0){
+            alert("新增子分类成功");
+            //  $(this).parent().find(".productC_child_WType").attr("readonly","readonly");
+             $(this).attr("readonly","readonly");
+             $(this).parent().siblings(".productC_contentf_LOGO").css({pointerEvents:"none"});
+          }
+        })
       }
-    })
+    }
   });
 
   //修改分类名
@@ -214,6 +226,11 @@ function productClassfix(){
       $(this).find("div").eq(1).text("保存");
       //把它变为可编辑
       $(this).parent(".productC_content_table5").siblings('.productC_content_table2').eq(1).attr("contenteditable","true");
+      $(this).parent(".productC_content_table5").siblings('.productC_content_table2').eq(1).focus();
+      //子分类也变成可编辑
+
+      $(this).parents(".productG_content_ul1").find(".productC_child_WType").removeAttr("readonly");
+      $(this).parents(".productG_content_ul1").find(".productC_contentf_LOGO").css({"pointerEvents":"auto"});
       flage=false;
     }else{
       //获取修改后的text
@@ -230,12 +247,57 @@ function productClassfix(){
           alert("修改成功");
           $(this).find("div").eq(1).text("编辑");
           $(this).parent(".productC_content_table5").siblings('.productC_content_table2').eq(1).attr("contenteditable","false");
+          // $(this).parent(".productC_content_table5").find(".productC_child_WType").attr("readonly","readonly");
+          //子分类变成不可编辑状态
+          $(this).parents(".productG_content_ul1").find(".productC_child_WType").attr("readonly","readonly");
+          $(this).parents(".productG_content_ul1").find(".productC_contentf_LOGO").css({"pointerEvents":"none"});
           flage=false;
         }
       })
-
     }
   });
+
+  //修改子类
+    $(document).delegate('.productC_contentf_LOGO', 'click', function(event) {
+        //当前兄弟元素input的value
+        var value = $(this).siblings("div").eq(0).find(".productC_child_WType").val();
+        //子分类id
+        var id =$(this).siblings("div").eq(0).attr("data");
+
+
+        if(id==undefined){
+          return;
+        }else {
+          if($.trim(value)!==null||$.trim(value)!=""){
+            ajax(""+url+"wangjian/api/productType/editProduct","post",{id:id,typeName:value})
+            .then((data)=>{
+              if(resultCode==0){
+                alert("修改成功");
+              }
+            })
+          }
+        }
+    })
+
+    //删除子分类
+    $(document).delegate('.product_Delect_childParame', 'click', function(event) {
+        //首先看是否有id
+        var id = $(this).siblings('div').eq(0).attr("data");
+        if(id==undefined){
+          //如果是新增的就移除
+          $(this).parent().remove();
+        }else{
+          //如果不是新增的就调删除接口
+          ajax(""+url+"wangjian/api/productType/deleteProduct","post",{id:id})
+          .then((data)=>{
+            if(resultCode==0){
+              alert("删除成功");
+              $(this).parent().remove();
+            }
+          })
+        }
+    });
+
   //ajax回调函数
   function pushList(data) {
       //定义list
@@ -256,14 +318,14 @@ function productClassfix(){
             var cList ="";
             for(var a in wTypes){
               cList+=`<div class="productC_child fl">
-              <div class="fl" style="margin-left:4px">
+              <div class="fl" style="margin-left:4px" data=${wTypes[a].id}>
                   <input type="text" name="name" class="productC_child_WType" value=${wTypes[a].typeName} readonly="readonly">
               </div>
 
-                <div class="productC_contentf_LOGO fl">
+                <div class="productC_contentf_LOGO fl" style="pointer-events:none;">
 
                 </div>
-                <div class="fr" style="font-size:16px;margin-right:6px;">
+                <div class=" product_Delect_childParame" >
                     x
                 </div>
                 </div>`;
@@ -341,27 +403,14 @@ function productSpec(){
     if(!(oLength>0)){
         // ajaxAleady();
     }
+    $("#productG_alert_select_top_input").focus();
   });
 
   //添加到新建规格的白色  productSpec_aleaSelect_box
   $("#productSpec_select_box").delegate('li', 'click', function(event) {
     //先统计规格白色里面的数量
-    var _length = $(".productSpec_aleaSelect_box").find(".productSpec_aleaSelect").length;
-    if(_length==2){
-      alert("最多只能选择两种规格");
-    }else{
-      //选中的text
-      var _text = $(this).text();
-      var stringHtml =` <div class="productSpec_aleaSelect fl">
-                          <div class="productSpec_aleaSelect_text">
-                            ${_text}
-                          </div>
-                          <div class="closeAleaSelect">
-                              x
-                          </div>
-                      </div> `;
-      $(".productSpec_aleaSelect_box").append(stringHtml);
-    }
+    var text = $(this).text();
+    $("#productG_alert_select_top_input").val(text);
   });
 
   //取消新建规格白色的孩子
@@ -371,33 +420,51 @@ function productSpec(){
   });
 
   //点击确定调新建规格接口
-  $(".productSpec_aleaSelect_sure").click(function(){
-    //先统计规格白色里面的数量
-    var _length = $(".productSpec_aleaSelect_box").find(".productSpec_aleaSelect").length;
-    if(_length==0){
-      alert("请选择至少一种规格");
-    }else{
-      //进行paramname 变量拼接
-      var oTextArray=[];
-      for(var i=0;i<_length;i++){
-        var oText=  $(".productSpec_aleaSelect_box").find(".productSpec_aleaSelect").children('.productSpec_aleaSelect_text').eq(i).text();
-          oTextArray.push(oText);
-      }
-      //数组转为字符串
-      var paramName = oTextArray.join(",");
+  // $(".productSpec_aleaSelect_sure").click(function(){
+  //   //先统计规格白色里面的数量
+  //   var _length = $(".productSpec_aleaSelect_box").find(".productSpec_aleaSelect").length;
+  //   if(_length==0){
+  //     alert("请选择至少一种规格");
+  //   }else{
+  //     //进行paramname 变量拼接
+  //     var oTextArray=[];
+  //     for(var i=0;i<_length;i++){
+  //       var oText=  $(".productSpec_aleaSelect_box").find(".productSpec_aleaSelect").children('.productSpec_aleaSelect_text').eq(i).text();
+  //         oTextArray.push(oText);
+  //     }
+  //     //数组转为字符串
+  //     var paramName = oTextArray.join(",");
+  //
+  //     //直接调保存接口 POST /api/productType/productParamAd
+  //     ajax(""+url+"wangjian/api/productType/productParamAdd","post",{merchantId:"44",paramName:paramName})
+  //     .then((data)=>{
+  //       var {resultCode,resultMessage,resultData} =data;
+  //       if(resultCode==0){
+  //         //点击的list
+  //         alert("添加成功");
+  //         $("#productSpec_edit").hide();
+  //       }
+  //     })
+  //   }
+  // });
 
-      //直接调保存接口 POST /api/productType/productParamAd
-      ajax(""+url+"wangjian/api/productType/productParamAdd","post",{merchantId:"44",paramName:paramName})
-      .then((data)=>{
-        var {resultCode,resultMessage,resultData} =data;
-        if(resultCode==0){
-          //点击的list
-          alert("添加成功");
-          $("#productSpec_edit").hide();
-        }
-      })
-    }
-  });
+  //点击确定调新建规格接口
+  $(".productSpec_aleaSelect_sure").click(function(){
+    //新建规格输入的值
+    var oValue= $("#productG_alert_select_top_input").val();
+        //直接调保存接口 POST /api/productType/productParamAd
+        ajax(""+url+"wangjian/api/productType/productParamAdd","post",{merchantId:"44",paramName:oValue})
+        .then((data)=>{
+          var {resultCode,resultMessage,resultData} =data;
+          if(resultCode==0){
+            //点击的list
+            alert("添加成功");
+            $("#productSpec_edit").hide();
+            getProductParam();
+          }
+        })
+
+  })
 
   //关闭新建规格
   $(".closeproductSpecAlert").click(function(){
@@ -429,6 +496,7 @@ function productSpec(){
       $(this).find("div").eq(1).text("保存");
       //把它变为可编辑
       $(this).parent(".productC_content_table5").siblings('.productS_content_table3').attr("contenteditable","true");
+      $(this).parent(".productC_content_table5").siblings('.productS_content_table3').focus();
       flage=false;
     }else{
       //获取修改后的text
@@ -445,14 +513,14 @@ function productSpec(){
           alert("修改成功");
           $(this).find("div").eq(1).text("编辑");
           $(this).parent(".productC_content_table5").siblings('.productC_content_table2').eq(1).attr("contenteditable","false");
-          flage=false;
+          flage=true;
         }
       })
 
     }
   });
 
-  //添加产品规格值
+  //添加产品规格分类
   $(document).delegate('.productC_child_add', 'click', function(event) {
     var This =$(this);
     var paramId = $(this).parents("ul").attr("id");
@@ -597,7 +665,7 @@ function productSpec(){
     })
   }
 
-  //获取产品规格值yzwjn 1236 http://www.fmdisk.com/file-799571.html
+
   function getProductValue(merchantId,paramId,object){
     var parents=   object.parents("ul");
     parents.find(".productC_child ").remove();
@@ -632,7 +700,7 @@ function productSpec(){
 }
 
 //产品添加页
-function productList(){
+function newProduct(){
   //获取分类列表
   $(".product_type_hasSelect").click(function(){
     $(".product_type_box").toggle();
@@ -936,5 +1004,450 @@ function productList(){
         }
         return list;
     }
+
+}
+
+//产品列表
+function productCList(){
+      $(".productGL_newProduct").click(function(){
+        window.location.href="newProduct.html";
+      });
+
+      var json={};
+      json.merchantId="44";
+      json.pageNo="1";
+      json.pageSize="2";
+
+      //获取产品列表
+      ajax(""+url+"wangjian/api/productType/productList","post",json)
+      .then((data)=>{
+        var {resultCode,resultMessage,resultData} =data;
+        if(resultCode==0){
+          appendProductList(resultData);
+        }
+      })
+
+      function appendProductList(resultData){
+
+          var list ="";
+          for(var i in resultData){
+              var {wjProduct,goods} = resultData[i];
+
+              for(var a in goods){
+                var {productStock,sellPrice,costPrice}=goods[a];
+              }
+              list+=` <div class="productGList_table_ListBox">
+                    <ul class="clearfix">
+                        <li style="width:40px;">
+                          <div class="productGList_table_selectLogo" style="margin:36px auto;">
+
+                          </div>
+                        </li>
+                        <li  style="width:80px;" class="productCId">${wjProduct.id}</li>
+                        <li  style="width:80px;">
+                          <img src="../images/upload.png" alt="" class="productGList_table_image">
+                        </li>
+                        <li  style="width:80px;">
+                            ${wjProduct.productName}
+                        </li>
+                        <li style="width:40px;">
+                          <div class="">红</div>
+                          <div class="">
+                            白
+                          </div>
+                          <div class="">
+                            烂
+                          </div>
+                        </li>
+                        <li style="width:60px;">
+                          <div class="">
+                              200/222
+                          </div>
+                          <div class="">
+                              200/222
+                          </div>
+                          <div class="">
+                              200/222
+                          </div>
+                        </li>
+                        <li style="width:60px;">
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                                200
+                          </div>
+                        </li>
+                        <li style="width:60px;">
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                                200
+                          </div>
+                        </li>
+                        <li style="width:60px;">
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                              200
+                          </div>
+                          <div class="">
+                                200
+                          </div>
+                        </li>
+                        <li style="width:40px;">上衣</li>
+                        <li style="width:92px;">
+                          <div class="productGList_table_ListBox_editBox clearfix">
+                              <div class="productGList_editBox_logo fl">
+
+                              </div>
+                              <div class="fl">
+                                  编辑
+                              </div>
+                          </div>
+                          <div class="productGList_table_ListBox_delBox clearfix">
+                            <div class="productGList_delBox_logo fl">
+
+                            </div>
+                            <div class="fl">
+                                删除
+                            </div>
+                          </div>
+                          <div class="productGList_table_ListBox_xiaBox clearfix">
+                            <div class="productGList_xiaBox_logo fl">
+
+                            </div>
+                            <div class="fl">
+                                停售
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                </div>;`;
+          }
+      }
+}
+
+//商品
+
+function productGList(){
+      (function(){
+        var json={};
+        var merchantId="44";
+        json.merchantId=merchantId;
+        var list="";
+        //进入页面就要拿分类
+        ajax(""+url+"wangjian/api/productType/listProduct","post",json)
+        .then((data)=>{
+            // console.log(JSON.stringify(data));
+            //调用获取list回调
+            var {resultCode,resultMessage,resultData} =data;
+            if(resultCode==0){
+              for(var i in resultData){
+                var typeName = resultData[i].typeName;
+                var id = resultData[i].id;
+                list+=`<section data=${id}>${typeName}</section>`;
+              }
+            }
+            $(".productG_type_box").append(list);
+        })
+      })()
+
+
+    $(".productG_content_bot_selectTypeBox_circleBox").click(function(){
+      $(".productG_type_box").slideToggle();
+    });
+
+    $(".productG_type_box").delegate('section', 'click', function(event) {
+      var text = $(this).text();
+      $(".productG_content_bot_selectTypeBox_Text").text(text);
+      $(".productG_type_box").slideUp();
+      //查询商品
+    });
+}
+
+//新建店铺
+function createStore(){
+
+  //更改状态
+  $(".radio_dot").click(function(){
+    $(this).addClass("radio_dotActive");
+    $(this).parent().siblings('.radio_open').find(".radio_dot").removeClass('radio_dotActive');
+  });
+  //获取省份接口
+  $("#provinceCircle").click(function(){
+      $("#provinceBox").toggle();
+      //如果请求过就不需要再请求了
+      if($("#provinceBox section").length==0){
+        ajax(""+url+"wangjian/api/wjArea/provincial","post",{})
+        .then((data)=>{
+          var {resultCode,resultMessage,resultData} =data;
+          var list="";
+          if(resultCode==0){
+            for(var i in resultData){
+              var {id,provincialName} = resultData[i];
+              list+=`<section data=${id}>${provincialName}</section>`;
+            }
+          }
+          $("#provinceBox").append(list);
+        })
+      }
+  });
+  //点击省份信息
+  $("#provinceBox").delegate('section', 'click', function(event) {
+      var text = $(this).text();
+      var data =$(this).attr("data");
+      $(".productG_content_pro").text(text);
+      $(".productG_content_pro").attr("data",data);
+      $("#provinceBox").hide();
+  });
+
+  //获取城市接口
+  $("#cityCircle").click(function(){
+      $("#cityBox").toggle();
+      var id=$(".productG_content_pro").attr("data");
+
+      if(id==undefined){
+
+      }else{
+
+        $("#cityBox").empty();
+        ajax(""+url+"wangjian/api/wjArea/findCity","post",{id:id})
+        .then((data)=>{
+          var {resultCode,resultMessage,resultData} =data;
+          var list="";
+          if(resultCode==0){
+            for(var i in resultData){
+              var {id,cityName} = resultData[i];
+              list+=`<section data=${id}>${cityName}</section>`;
+            }
+          }
+
+          $("#cityBox").append(list);
+        })
+      }
+  });
+
+  //点击省份信息
+  $("#cityBox").delegate('section', 'click', function(event) {
+      var text = $(this).text();
+      var data =$(this).attr("data");
+      $(".productG_content_city").text(text);
+      $(".productG_content_city").attr("data",data);
+      $("#cityBox").hide();
+  });
+
+
+  //获取城市接口
+  $("#areaCircle").click(function(){
+      $("#areaBox").toggle();
+      var id=$(".productG_content_city").attr("data");
+
+      if(id==undefined){
+
+      }else{
+        $("#areaBox").empty();
+        ajax(""+url+"wangjian/api/wjArea/findDistrict","post",{id:id})
+        .then((data)=>{
+          var {resultCode,resultMessage,resultData} =data;
+          var list="";
+          if(resultCode==0){
+            for(var i in resultData){
+              var {id,districtName} = resultData[i];
+              list+=`<section data=${id}>${districtName}</section>`;
+            }
+          }
+
+          $("#areaBox").append(list);
+        })
+      }
+  });
+
+  //区域点击
+  $("#areaBox").delegate('section', 'click', function(event) {
+      var text = $(this).text();
+      var data =$(this).attr("data");
+      $(".productG_content_area").text(text);
+      $(".productG_content_area").attr("data",data);
+      $("#areaBox").hide();
+  });
+
+
+  //创建店铺接口
+  $(".create_btn").click(function(){
+
+    var longitude=$("#jingdu").val();
+    var latitude =$("#weidu").val();
+
+    if(!padgeWhite(longitude)){
+      alert("请获取店铺地址");
+      return;
+    }
+    //省id
+    var provinceId =$(".productG_content_pro").attr("data");
+
+    //市id
+    var cityId =$(".productG_content_city").attr("data");
+    //区id
+    var districtId =$(".productG_content_area").attr("data");
+
+    if(!padgeWhite(provinceId)){
+      alert("请选择省份");
+      return;
+    }
+    if(!padgeWhite(cityId)){
+      alert("请选择城市");
+      return;
+    }
+    if(!padgeWhite(districtId)){
+      alert("请选择地区");
+      return;
+    }
+
+    //店铺名字
+    var storeName=$("#storeName").val();
+    if(!padgeWhite(storeName)){
+      alert("请输入店铺名字");
+      return;
+    }
+
+    //店铺描述
+    var storeDesc=$("#storeDesc").val();
+    if(!padgeWhite(storeDesc)){
+      alert("请输入店铺描述");
+      return;
+    }
+    //店铺地址
+    var address =$("#address").val();
+    if(!padgeWhite(address)){
+      alert("请输入店铺地址");
+      return;
+    }
+
+
+
+    var storeStatus =$(".radio_dotActive").attr("data");
+
+    var auth="0";
+
+    var merchantId="44";
+
+    var mainStore="1";
+
+    //ajax参数拼接
+    var json = {provinceId,cityId,districtId,storeName,storeDesc,address,longitude,latitude,storeStatus,auth,merchantId,mainStore};
+      ajax(""+url+"wangjian/api/store/StoreAdd","post",json)
+      .then((data)=>{
+        var {resultCode,resultMessage,resultData} =data;
+
+        if(resultCode==0){
+          alert("新增店铺成功");
+          window.location.href="storeHome.html";
+        }
+      })
+  });
+}
+
+//店铺装修
+function storeRedecorated(){
+
+  //更改状态
+  $(".productG_selectDot").click(function(){
+    $(this).addClass("radio_dotActive");
+    $(this).parent().siblings('div').find(".productG_selectDot").removeClass('radio_dotActive');
+  });
+  //上方基本跟店铺设置切换
+  $("#storeRedecorated_list li").click(function(){
+    var index =$(this).index();
+    $(this).addClass('liActive_fff').siblings('').removeClass('liActive_fff');
+    $(".storeRedecorated_index").eq(index).show().siblings('section').hide();
+  });
+
+  //封面样式选择
+  $(".storeR_headerRight li").click(function(){
+    $(this).find("div").addClass('coverActive');
+    $(this).find("p").addClass('coverLite');
+    $(this).siblings().find('div').removeClass('coverActive');
+    $(this).siblings().find('p').removeClass('coverLite');
+  });
+
+  //店铺首页店铺公告切换
+  $(".storeRede_type_img").click(function(){
+    $(this).addClass('storeRede_type_imgActive');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_type_img2").removeClass('storeRede_type_img2Active');
+    $(".storeRede_type_img3").removeClass('storeRede_type_img3Active');
+    $(".storeRede_type_img4").removeClass('storeRede_type_img4Active');
+  });
+
+
+  $(".storeRede_type_img2").click(function(){
+    $(this).addClass('storeRede_type_img2Active');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_type_img").removeClass('storeRede_type_imgActive');
+    $(".storeRede_type_img3").removeClass('storeRede_type_img3Active');
+    $(".storeRede_type_img4").removeClass('storeRede_type_img4Active');
+  });
+
+  $(".storeRede_type_img3").click(function(){
+    $(this).addClass('storeRede_type_img3Active');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_type_img2").removeClass('storeRede_type_img2Active');
+    $(".storeRede_type_img").removeClass('storeRede_type_imgActive');
+    $(".storeRede_type_img4").removeClass('storeRede_type_img4Active');
+  });
+
+  $(".storeRede_type_img4").click(function(){
+    $(this).addClass('storeRede_type_img4Active');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_type_img2").removeClass('storeRede_type_img2Active');
+    $(".storeRede_type_img3").removeClass('storeRede_type_img3Active');
+    $(".storeRede_type_img").removeClass('storeRede_type_imgActive');
+  });
+
+  //店铺列表切换
+  $(".storeRede_storelist_img").click(function(){
+    $(this).addClass('storeRede_storelist_imgActive');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_storelist_img2").removeClass('storeRede_storelist_img2Active');
+    $(".storeRede_storelist_img3").removeClass('storeRede_storelist_img3Active');
+
+  });
+  $(".storeRede_storelist_img2").click(function(){
+    $(this).addClass('storeRede_storelist_img2Active');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_storelist_img").removeClass('storeRede_storelist_imgActive');
+    $(".storeRede_storelist_img3").removeClass('storeRede_storelist_img3Active');
+
+  });
+  $(".storeRede_storelist_img3").click(function(){
+    $(this).addClass('storeRede_storelist_img3Active');
+    $(this).parent("li").addClass('coverLite').siblings('li').removeClass('coverLite');
+    $(".storeRede_storelist_img2").removeClass('storeRede_storelist_img2Active');
+    $(".storeRede_storelist_img").removeClass('storeRede_storelist_imgActive');
+
+  });
+
+
+
+
+}
+
+//店铺设置
+function storeSetuo(){
+  //上方基本跟店铺设置切换
+  $("#storeRedecorated_list li").click(function(){
+    var index =$(this).index();
+    $(this).addClass('liActive_fff').siblings('').removeClass('liActive_fff');
+    $(".storeSetup_index").eq(index).show().siblings('section').hide();
+  });
 
 }

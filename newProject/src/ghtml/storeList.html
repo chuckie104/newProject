@@ -15,8 +15,8 @@
                     </div>
                     <div class="contentWrap">
                           <ul class="clearfix homePage_header_list">
-                              <li class="header_tab_active">站点页面</li>
-                              <li>线上分店</li>
+                              <li >站点页面</li>
+                              <li class="header_tab_active">线上分店</li>
                               <li>产品库</li>
                               <li>生成app</li>
                           </ul>
@@ -156,7 +156,7 @@
                                   </div>
                           </section>
                     </div>
-                    
+
               </div>
         </div>
   </body>
@@ -167,6 +167,15 @@
     <script type="text/javascript">
           $(function(){
             // homePage();
+            //进入店铺
+            $(".storeList_list_to").click(function(){
+                window.location.href="storeHome.html";
+            });
+
+            //新建店铺
+            $(".storeList_createBox ").click(function(){
+              window.location.href="createStore.html";
+            });
           })
     </script>
 </html>

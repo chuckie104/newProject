@@ -8,7 +8,144 @@
   </head>
   <body>
         <div id="storeHome">
+            <!-- 新建商品弹窗 -->
+            <div class="alert" id="productGlist_add" style="display:none;">
+                <div class="productGlist_add_box">
+                      <div class="productGlist_add_top">
+                          <p style="color:#fff;margin-left:20px;">请选择要售卖的商品</p>
+                          <div class="closeProductGlist_add" style="color:#fff;">
+                              X
+                          </div>
+                      </div>
+                      <div class="productGlist_add_content">
+                            <div class="productGlist_add_content_top clearfix">
+                                <ul class="fl pdct_list">
+                                  <li>
+                                    <div class="pdct_wrap">
+                                          <div class="pdct_wrapin">
+                                              <p class="pdct_wrapin_select">男士衣服</p>
+                                              <div class="dowmCirle">
+                                                  >
+                                              </div>
+                                          </div>
+                                    </div>
+                                    <div class="pdct_wrap_nav">
+                                          <div class="pdct_wrap_navList">
+                                              箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                              箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                              箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                              箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                            箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                            箱包
+                                          </div>
+                                          <div class="pdct_wrap_navList">
+                                            箱包
+                                          </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div class="pdct_wrap">
+                                          <div class="pdct_wrapin">
+                                              <p class="pdct_wrapin_select">男士衣服</p>
+                                              <div class="dowmCirle">
+                                                  >
+                                              </div>
+                                          </div>
+                                    </div>
+                                  </li>
+                                </ul>
+                                <div class="fr pdct_search">
+                                  <input type="text" name="name" id="pdct_search" placeholder="搜索产品名称或商品号">
+                                  <div class="pdct_SearchLogo">
 
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="productGlist_add_content_center">
+                                <div class="pdcc_list">
+                                    <section class="pdcc_online ">
+                                            <div class="pdcc_online_top clearfix">
+                                                <div class="fl">
+                                                      xxxT恤
+                                                </div>
+                                                <div class="fl">
+                                                    编号：9527
+                                                </div>
+                                                <div class="fl">
+                                                    分类：T恤
+
+                                                </div>
+                                                <div class="fl">
+                                                    重量6。5kg
+                                                </div>
+                                                <section class="fr">
+                                                    》
+                                                </section>
+                                            </div>
+                                            <div class="pdcc_online_center">
+                                                  <div class="pdcc_online_center_info">
+                                                      <ul class="clearfix">
+                                                        <li>颜色</li>
+                                                        <li>尺码</li>
+                                                        <li>单品编号</li>
+                                                        <li>库存量</li>
+                                                        <li>批量</li>
+                                                        <li>报价</li>
+                                                        <li>
+                                                            <p>全选</p>
+                                                            <div class="select_logo">
+                                                                []
+                                                            </div>
+                                                        </li>
+                                                      </ul>
+                                                  </div>
+                                                  <div class="pdcc_online_center_online">
+                                                    <ul class="clearfix">
+                                                      <li>红色</li>
+                                                      <li>100/90</li>
+                                                      <li>aa2222</li>
+                                                      <li>222</li>
+                                                      <li>1-999-222-999</li>
+                                                      <li>70/90</li>
+                                                      <li>
+
+                                                          <div class="select_logo">
+                                                              []
+                                                          </div>
+                                                      </li>
+                                                    </ul>
+                                                  </div>
+                                            </div>
+                                    </section>
+                                </div>
+                                <!-- 翻页 -->
+
+                                  <div class="j_con_main_con_nav">
+                                      <ul class="clearfix">
+                                          <li>首页</li>
+                                          <li>&lt;&lt;</li>
+                                          <li class="current">1</li>
+                                          <li>2</li>
+                                          <li>...</li>
+                                          <li>10</li>
+                                          <li>&gt;&gt;</li>
+                                          <li>尾页</li>
+                                      </ul>
+                                  </div>
+                            </div>
+                      </div>
+                </div>
+            </div>
             <div class="homePage_header">
                     <div class="homePage_logo">
 
@@ -27,8 +164,8 @@
                     <div class="createL">
                           创建店铺列表
                     </div>
-              </div>
-              <div class="productG_content_wrapall clearfix">
+            </div>
+            <div class="productG_content_wrapall clearfix">
                 <section class="storeHome_aside fl">
                   <div class="storeHome_aside_wrap">
                     <div class="storeHome_aside_title">
@@ -127,6 +264,14 @@
                                           <div class="productG_content_bot_selectTypeBox_cicle">
 
                                           </div>
+                                    </div>
+                                    <div class="productG_type_box">
+                                          <!-- <section>
+                                                衣服
+                                          </section>
+                                          <section>
+                                                电器
+                                          </section> -->
                                     </div>
                                 </div>
                                 <div class="productG_content_bot_threeBtn fr">
@@ -279,7 +424,7 @@
 
     <script type="text/javascript">
           $(function(){
-
+              productGList();
 
           })
 

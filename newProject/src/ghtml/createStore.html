@@ -15,8 +15,8 @@
                     </div>
                     <div class="contentWrap">
                           <ul class="clearfix homePage_header_list">
-                              <li class="header_tab_active">站点页面</li>
-                              <li>线上分店</li>
+                              <li >站点页面</li>
+                              <li class="header_tab_active">线上分店</li>
                               <li>产品库</li>
                               <li>生成app</li>
                           </ul>
@@ -40,7 +40,7 @@
                                   </div>
                                 </div>
                                 <div class="createStore_inputText fl">
-                                      <input type="text" name="name" placeholder="请输入不超过15个字">
+                                      <input type="text" name="name" placeholder="请输入不超过15个字" id="storeName">
                                 </div>
                           </div>
                           <div class="store_info clearfix">
@@ -53,7 +53,7 @@
                                   </div>
                                 </div>
                                 <div class="createStore_textarea fl">
-                                      <textarea name="name" placeholder="请输入您的店铺描述"></textarea>
+                                      <textarea name="name" placeholder="请输入您的店铺描述" id="storeDesc"></textarea>
                                 </div>
                           </div>
                           <div class="store_city clearfix">
@@ -68,17 +68,36 @@
                                 <div class="productG_content_threeWrap fl">
                                   <div class="productG_content_address fl">
                                     <div class="productG_content_pro fl">
-                                      省份
+                                      省
                                     </div>
-                                    <div class="circle fr">
+                                    <div class="circle fr" id="provinceCircle">
 
+                                    </div>
+                                    <div class="city_select_box" id="provinceBox">
+                                        <!-- <section>
+                                          广东
+                                        </section> -->
                                     </div>
                                   </div>
                                   <div class="productG_content_address  fl">
                                     <div class="productG_content_city fl">
                                       市
                                     </div>
-                                    <div class="circle fr">
+                                    <div class="circle fr" id="cityCircle">
+
+                                    </div>
+                                    <div class="city_select_box" id="cityBox">
+
+                                    </div>
+                                  </div>
+                                  <div class="productG_content_address  fl">
+                                    <div class="productG_content_area fl">
+                                      区
+                                    </div>
+                                    <div class="circle fr" id="areaCircle">
+
+                                    </div>
+                                    <div class="city_select_box" id="areaBox">
 
                                     </div>
                                   </div>
@@ -90,12 +109,12 @@
                                   <div class="createStore_noimport fl">
 
                                   </div>
-                                  <div class="createStore_text fl">
+                                  <div class="createStore_text fl" >
                                       店铺地址
                                   </div>
                                 </div>
                                 <div class="createStore_inputText fl">
-                                      <input type="text" name="name" placeholder="请输入你的店铺地址">
+                                      <input type="text" name="name" placeholder="请输入你的店铺地址" id="address">
                                 </div>
                           </div>
                           <div class="store_map clearfix">
@@ -114,6 +133,8 @@
                                       (提示: 如定位有误, 请拖动图标到准确位置)
                                 </div>
                           </div>
+                          <input type="hidden" name="" value="" id="jingdu">
+                          <input type="hidden" name="" value="" id="weidu">
                           <div class="baidu_map" id="map">
 
                           </div>
@@ -149,6 +170,8 @@
                                 map.panTo(r.point);
                                 map.enableScrollWheelZoom(true);
                                 console.log(r.point);
+                                $("#jingdu").val(r.point.lng);
+                                $("#weidu").val(r.point.lat);
                                 //点击获取经纬度
                                 map.addEventListener("click",function(e){
                                   alert(e.point.lng + "," + e.point.lat);
@@ -157,6 +180,7 @@
                                   removeMarker.bind(marker).bind(mk);
                                   json.lng =e.point.lng ;
                                   json.lat = e.point.lat;
+
                                   var mk = new BMap.Marker(json);
                                   sessionStorage.setItem("map",JSON.stringify(json));
                                   map.addOverlay(mk);
@@ -180,7 +204,7 @@
                             </div>
                             <div class="store_radio fl">
                                 <div class="radio_open fl">
-                                      <div class="radio_dot fl">
+                                      <div class="radio_dot fl radio_dotActive" data="1">
 
                                       </div>
                                       <div class="radio_text fl">
@@ -188,7 +212,7 @@
                                       </div>
                                 </div>
                                 <div class="radio_open fl">
-                                      <div class="radio_dot fl">
+                                      <div class="radio_dot fl" data="2">
 
                                       </div>
                                       <div class="radio_text fl">
@@ -211,7 +235,7 @@
 
     <script type="text/javascript">
           $(function(){
-            // homePage();
+             createStore();
           })
     </script>
 </html>

@@ -37,15 +37,15 @@ a:hover{ text-decoration:none; color:#f60;}
   background-color: rgba(128, 128, 128, 0.7);
 }
 
-::-webkit-input-placeholder { /* WebKit browsers */
-color: #fff;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-color: #fff;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-color:#fff;
-}
-:-ms-input-placeholder { /* Internet Explorer 10+ */
-color: #fff;
-}
+  ::-webkit-input-placeholder { /* WebKit browsers */
+  color: #fff;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:#fff;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #fff;
+  }

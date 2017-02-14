@@ -5,6 +5,14 @@
     <title>店铺首页</title>
     <link rel="stylesheet" href="../gcss/style.css">
     <link rel="stylesheet" href="../gcss/base.css">
+    <style media="screen" id="abc">
+      .background{
+        width: 100%;
+      }
+      .css{
+        width: 20%;
+      }
+    </style>
   </head>
   <body>
         <div id="storeHome">
@@ -126,11 +134,11 @@
                           </div>
                           <div class="storeHome_aside_box_bot">
                                 <ul class="clearfix">
-                                    <li>
+                                    <li class="storeHomeShareActive">
                                         <div class="storeHome_aside_box_logo">
 
                                         </div>
-                                        <div class="storeHome_aside_box_online">
+                                        <div class="storeHome_aside_box_online ">
                                               <p>
                                                 原始分享人数(个)
                                               </p>
@@ -243,49 +251,9 @@
     <script type="text/javascript" src="../gjs/app.js">  </script>
 
     <script type="text/javascript">
-          $(function(){
-            var start = "09:00";
-            var end ="14:30";
-            // //转成以下数组
-            // ["11:00" ,"11:30" ,"12:00" ,"12:30", "13:00" ,"13:30" ,"14:00 ","14:30"]
-            //把，去掉
-            start = start.replace(":",'');
-            //判断开始是否有30
-            if(start.substring(start.length-2,start.length)=="00"){
-                start = start.replace("00",".0")-0;
-            }else{
-                  start = start.replace("30",".5")-0;
-            }
-
-                end = end.replace(":",'');
-            //判断结束是否有30
-            if(end.substring(end.length-2,end.length)=="00"){
-                end = end.replace("00",".0")-0;
-
-            }else{
-              end = end.replace("30",".5")-0;
-            }。
-
-            var array=[];
-
-            var dis =0;
-
-            dis =(end-start)/0.5;
-
-            for(var i=0;i<=dis;i++){
-              var result = start+i*0.5;
-              if((result/.5)%2==0){
-                 result=result+":00";
-              }else{
-                result=result-0.5;
-                result=result+":30";
-              }
-              array.push(result);
-            }
-
-            console.log(array);
-            var xml =`&nbsp;aaa&nbsp;vvv`;
-            $(".storeHome_aside_list_Text").eq(0).append(xml);
-          })
+        $(function(){
+              var string  =$("#abc").text();
+              
+        })
     </script>
 </html>
